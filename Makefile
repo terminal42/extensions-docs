@@ -16,7 +16,7 @@ build-%:
 		--environment $* \
 		--destination ../build/$* \
 		--logLevel info \
-		--baseURL https://docs.contao.org/$*/
+		--baseURL https://extensions.terminal42.ch/docs/$*/
 
 # Live server for certain book
 live-%:

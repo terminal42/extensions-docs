@@ -1,4 +1,7 @@
 <p>
-    More about Contao on <a href="https://contao.org">contao.org</a>.<br>
-    More documentation on <a href="https://docs.contao.org">docs.contao.org</a>.
+    {{ if eq .Site.Language.Lang "en" }}
+    This is a commercial Contao extension by terminal42 that can be bought in <a href="{{ .Site.Params.extensionPermalink }}">the extension store</a>.
+    {{ else }}
+    Dies ist eine kommerzielle Contao-Erweiterung von terminal42 die im <a href="{{ .Site.Params.extensionPermalink }}">Erweiterungsshop</a> gekauft werden kann.
+    {{ end }}
 </p>

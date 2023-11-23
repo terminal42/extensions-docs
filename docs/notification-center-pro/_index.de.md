@@ -4,4 +4,4 @@ title: "Notification Center Pro"
 
 # Notification Center Pro
 
-Lorem Ipsum
+Lorem Ipsum Deutsch
