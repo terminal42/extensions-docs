@@ -1,24 +1,24 @@
 :root {
 
-    --MAIN-TEXT-color: #323232; /* Color of text by default */
+    --MAIN-TEXT-color: #2d3f4b; /* Color of text by default */
     --MAIN-TITLES-TEXT-color: #5e5e5e; /* Color of titles h2-h3-h4-h5 */
     --MAIN-LINK-color: #1C90F3; /* Color of links */
     --MAIN-LINK-HOVER-color: #167ad0; /* Color of hovered links */
     --MAIN-ANCHOR-color: #1C90F3; /* color of anchors on titles */
 
-    --MENU-HEADER-BG-color: #f47c00; /* Background color of menu header */
-    --MENU-HEADER-BORDER-color: #ffae5b; /*Color of menu header border */
+    --MENU-HEADER-BG-color: #d7dbcc; /* Background color of menu header */
+    --MENU-HEADER-BORDER-color: #a13609; /*Color of menu header border */
 
-    --MENU-SEARCH-BG-color: #f47c00; /* Search field background color (by default borders + icons) */
-    --MENU-SEARCH-BOX-color: #ffae5b; /* Override search field border color */
-    --MENU-SEARCH-BOX-ICONS-color: #ffc78e; /* Override search field icons color */
+    --MENU-SEARCH-BG-color: #f1ecd4; /* Search field background color (by default borders + icons) */
+    --MENU-SEARCH-BOX-color: #f1ecd4; /* Override search field border color */
+    --MENU-SEARCH-BOX-ICONS-color: #a13609; /* Override search field icons color */
 
-    --MENU-SECTIONS-ACTIVE-BG-color: #0f1c26; /* Background color of the active section and its childs */
-    --MENU-SECTIONS-BG-color: #172b3b; /* Background color of other sections */
-    --MENU-SECTIONS-LINK-color: #d3d5d7; /* Color of links in menu */
-    --MENU-SECTIONS-LINK-HOVER-color: #fff; /* Color of links in menu, when hovered */
-    --MENU-SECTION-ACTIVE-CATEGORY-color: #fff; /* Color of active category text */
-    --MENU-SECTION-ACTIVE-CATEGORY-BG-color: #172b3b; /* Color of background for the active category (only) */
+    --MENU-SECTIONS-ACTIVE-BG-color: #d7dbcc; /* Background color of the active section and its childs */
+    --MENU-SECTIONS-BG-color: #d7dbcc; /* Background color of other sections */
+    --MENU-SECTIONS-LINK-color: #2d3f4b; /* Color of links in menu */
+    --MENU-SECTIONS-LINK-HOVER-color: #457da7; /* Color of links in menu, when hovered */
+    --MENU-SECTION-ACTIVE-CATEGORY-color: #457da7; /* Color of active category text */
+    --MENU-SECTION-ACTIVE-CATEGORY-BG-color: #d7dbcc; /* Color of background for the active category (only) */
 
     --MENU-VISITED-color: #33a1ff; /* Color of 'page visited' icons in menu */
     --MENU-SECTION-HR-color: #20272b; /* Color of <hr> separator in menu */
@@ -165,7 +165,7 @@ a:hover {
     display: block;
     text-align: left;
     margin-top: 4px;
-    color: white;
+    color: #457da7;
 }
 
 #body img, #body .video-container {

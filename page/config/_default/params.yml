@@ -1,9 +1,11 @@
-themeVariant: 'contao'
+themeVariant: 'terminal42'
 disableSearch: false
-disableLanguageSwitch: true
-documentation_label: Documentation
+disableLanguageSwitch: false
+documentation_label: Extension
 showVisitedLinks: true
 disableInlineCopyToClipBoard: true
 #disableAssetsBusting: true
 disableLandingPageButton: true
 extensionPermalink: https://extensions.terminal42.ch
+DocumentationTitleEn: Make sure to configure the parameter "DocumentationTitleEn" in this extension book.
+DocumentationTitleDe: Stelle sicher, dass der Parameter "DocumentationTitleEn" in diesem Erweiterungsbuch konfiguriert ist.
