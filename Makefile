@@ -10,7 +10,6 @@ build:
 
 # Build certain book
 build-%:
-	echo $*
 	cd page; hugo \
 		--cleanDestinationDir \
 		--environment $* \
