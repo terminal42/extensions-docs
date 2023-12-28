@@ -6,6 +6,6 @@ showVisitedLinks: true
 disableInlineCopyToClipBoard: true
 #disableAssetsBusting: true
 disableLandingPageButton: true
-extensionPermalink: https://extensions.terminal42.ch
+extensionPermalink: ''
 DocumentationTitleEn: Make sure to configure the parameter "DocumentationTitleEn" in this extension book.
 DocumentationTitleDe: Stelle sicher, dass der Parameter "DocumentationTitleEn" in diesem Erweiterungsbuch konfiguriert ist.
