@@ -48,6 +48,10 @@ Da das «Projekt» 18 Mal eingesetzt wird (= 18 produktiv genutzte «Installatio
 entsprechend **18x fällig**. Sobald wir das Projekt für einen weiteren Kunden installieren, wird eine **19. Lizenz** 
 fällig etc.
 
+Etwas technischer ausgedrückt: Ein Projekt definiert sich durch die identische `composer.json` und `composer.lock`.
+Das Projekt kann aber gerne beliebig oft installiert (oder in Englisch «deployed») werden. Für jede produktive 
+Installation wird einfach eine Lizenz fällig.
+
 ## Die zwei Installationsmöglichkeiten
 
 Unsere Erweiterungen können allesamt auf zwei verschiedene Arten installiert werden:
