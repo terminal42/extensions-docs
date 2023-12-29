@@ -72,4 +72,3 @@ auth.json zu kopieren. Weitere Informationen findest du im [Handbuch von Compose
 {{% /tab %}}
 
 {{< /tabs >}}
-

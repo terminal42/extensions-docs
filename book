@@ -1,0 +1,70 @@
+#!/usr/bin/env php
+<?php
+
+$books = $folders = array_map(function($dir) {
+    return basename($dir);
+}, glob(__DIR__ . '/docs/*', GLOB_ONLYDIR));
+
+$commands = ['build-all'];
+
+foreach ($books as $book) {
+    $commands[] = 'build-' . $book;
+    $commands[] = 'live-' . $book;
+}
+
+$command = $_SERVER['argv'][1] ?? '';
+
+if (!in_array($command, $commands, true)) {
+    echo 'Must run one of the following commands:' . "\n- " . implode("\n- ", $commands);
+    exit(1);
+}
+
+$runCommand = function (string $command) {
+    echo $command . "\n";
+    echo system($command);
+};
+
+$buildBook = function(string $book) use ($runCommand) {
+    $command = <<<COMMAND
+cd page; hugo \
+    --cleanDestinationDir \
+    --environment {book} \
+    --destination ../build/{book} \
+    --logLevel info \
+    --baseURL https://extensions.terminal42.ch/docs/{book}/
+COMMAND;
+
+    $runCommand(str_replace('{book}', $book, $command));
+};
+
+
+$liveBook = function(string $book) use ($runCommand) {
+    $command = <<<COMMAND
+cd page; hugo server \
+    --cleanDestinationDir \
+    --environment {book} \
+    --destination ../build/{book} \
+    --logLevel info
+COMMAND;
+
+    $runCommand(str_replace('{book}', $book, $command));
+};
+
+preg_match('/^(build|live)-(.*)/', $command, $matches);
+
+if ('build-all' === $matches[0]) {
+    foreach ($books as $book) {
+        $buildBook($book);
+    }
+    return;
+}
+
+if ('build' === $matches[1]) {
+    $buildBook($matches[2]);
+    return;
+}
+
+if ('live' === $matches[1]) {
+    $liveBook($matches[2]);
+    return;
+}

@@ -20,8 +20,14 @@ jobs:
               with:
                   hugo-version: '0.120.4'
 
+            - name: Setup PHP
+              uses: shivammathur/setup-php@v2
+              with:
+                  php-version: 8.2
+                  coverage: none
+
             - name: Build all books
-              run: make build
+              run: ./book build-all
 
             - name: Deploy
               uses: appleboy/scp-action@master

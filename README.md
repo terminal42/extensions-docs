@@ -24,26 +24,18 @@ The documentation is built using the [Hugo site generator](https://gohugo.io/),
 thus you need to [install Hugo](https://gohugo.io/getting-started/installing/) 
 first on your system.
 
-Building is done using the `make` command. There are different commands available 
+Building is done using a PHP file. There are different commands available 
 depending on what part of the documentation you want to build.
 
 ```
-make build-dev
-make build-manual
+./book build-<book>
 ```
 
 Builds the entire documentation into the `build` directory.
 
 ```
-make live-dev
-make live-manual
+./book live-<book>
 ```
 
 Spins up the development server which automatically tracks changes in the `docs` 
 directory and rebuilds the front end. You can access the front end on [http://localhost:1313](http://localhost:1313).
-
-```
-make clean
-```
-
-Cleans the build directory.
