@@ -1,0 +1,10 @@
+{{ partial "header.html" . }}
+
+{{ if eq .Site.Language.Lang "en" }}
+    {{ partial "installation_content.en.md" . | markdownify }}
+{{ else }}
+    {{ partial "installation_content.de.md" . | markdownify }}
+{{ end }}
+
+
+{{ partial "footer.html" . }}
