@@ -38,11 +38,11 @@ Es gibt aber auch Fälle, bei denen das selbe «Projekt» mehrfach installiert w
 > haben also ein «Projekt» namens «Bakery», das wir beliebig oft installieren. Zurzeit nutzen diese Plattform 
 > insgesamt 18 Kunden:
 > 
-> 1. Bäckerei Schmidt, Hamburg
-> 2. Bäckerei & Konditorei Huber, München
-> 3. [...]
-> 17. Kafi & Gipfeli, Bern
-> 18. Kaiser & Schmarrn, Wien
+> * 1. Bäckerei Schmidt, Hamburg
+> * 2. Bäckerei & Konditorei Huber, München
+> * 3. [...]
+> * 17. Kafi & Gipfeli, Bern
+> * 18. Kaiser & Schmarrn, Wien
 
 Da das «Projekt» 18 Mal eingesetzt wird (= 18 produktiv genutzte «Installationen»), werden die Lizenzkosten 
 entsprechend **18x fällig**. Sobald wir das Projekt für einen weiteren Kunden installieren, wird eine **19. Lizenz** 
