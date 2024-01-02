@@ -9,7 +9,7 @@ Notification Center Pro is a commercial extension to our [free and very popular 
 On top of using the free version, Notification Center Pro will enhance your Notification Center experience with the 
 following features:
 
-## Void gateway
+## Void Gateway
 
 This gateway does not send any message at all. Instead, it just fakes a successful delivery allowing
 for easier testing.
