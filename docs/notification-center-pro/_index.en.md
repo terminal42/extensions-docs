@@ -11,16 +11,18 @@ following features:
 
 ## Void Gateway
 
-This gateway does not send any message at all. Instead, it just fakes a successful delivery allowing
+The [Void Gateway](./void-gateway) does not send any message at all. Instead, it just fakes a successful delivery allowing
 for easier testing.
 
 ## Logs
 
-- Allows to view all notifications sent via the Notification Center
-- Logs are kept for a configurable amount of days (`7` by default)
-- Allows to re-send notifications right from the logs and even allows to adjust certain information e.g.
+The [Logs](./logs):
+
+- allow to view all notifications sent via the Notification Center
+- are kept for a configurable amount of days (`7` by default)
+- allow to re-send notifications right from the back end and even allow to adjust certain information e.g.
   Simple Tokens, so you can test things easily
-- Provides a diff viewer to see differences between log entries being sent based on another one
+- provides a diff viewer to see differences between log entries being sent based on another one
 
 ## Custom Simple Tokens
 
