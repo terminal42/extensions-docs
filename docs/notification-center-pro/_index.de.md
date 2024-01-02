@@ -11,7 +11,7 @@ folgenden Funktionen:
 
 ## Void Gateway
 
-Das [Void Gateway](./void-gateway) sendet überhaupt keine Nachricht (`void` is Englisch für "Nichts"). Stattdessen täuscht es nur eine erfolgreiche Zustellung vor, um das Testing zu vereinfachen.
+Das [Void Gateway](./void-gateway) sendet überhaupt keine Nachricht (`void` ist Englisch für "Nichts"). Stattdessen täuscht es nur eine erfolgreiche Zustellung vor, um das Testing zu vereinfachen.
 
 ## Logs
 
