@@ -15,10 +15,10 @@ So for testing, you need to give the Notification Center Pro a token collection 
 
 As you can see from this screenshot, there are two testing modes:
 
-* Testing based on your own token collection.
+* Testing based on your own token collection. \
   This can be very handy for super simple use cases. If for example, your form is very short, and you know exactly 
   what values will be provided, this is a very quick way to test things.
-* Testing based on a log entry.
+* Testing based on a log entry. \
   Imagine you have a form (or any notification type) with lots of tokens. Maybe a form with 30 form fields. It would 
   be super cumbersome to create those testing tokens manually. So instead of doing that, you can also test your 
   custom token based on a log entry.

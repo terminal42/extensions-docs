@@ -30,9 +30,4 @@ You can conveniently create your [own, custom Simple Tokens](./custom-tokens) ba
 lot more flexible by extracting partial information from other tokens, combining them or virtually doing whatever you can do
 with Twig with them.
 
-
-
-
-
-
 [NC]: https://extensions.contao.org/?p=terminal42%2Fnotification_center
