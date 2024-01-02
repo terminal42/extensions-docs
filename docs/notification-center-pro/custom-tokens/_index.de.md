@@ -41,7 +41,7 @@ Wir bräuchten also ein zusätzliches Token, so dass wir am Ende zwei Tokens in 
 | ##form_colors##    | green, yellow |
 | ##is_color_green## | yes           |
 
-Denn dann können wir in unserer Meldung unser Ziel erreichen und dies schreiben:
+Denn dann können wir in unserer Nachricht unser Ziel erreichen und dies schreiben:
 
 > Hallo ##form_firstname## \
 > {if is_color_green == "yes"} \

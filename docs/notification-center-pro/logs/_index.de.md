@@ -16,7 +16,7 @@ Du kannst diese Nachricht nun erneut versenden. Du kannst dies entweder völlig 
 
 ![Screenshot des Cockpits]({{% asset "/notification-center-pro/images/screenshot_resend_cockpit.png"%}}?classes=shadow)
 
-Standardmässig werden alle Nachrichten völlig unverändert erneut gesendet. Wenn du also z.B. die Konfiguration eines Gateways zwischenzeitlich geändert hast, hat dies keine Auswirkungen auf diese Meldung. Du kannst dieses Verhalten an deine Bedürfnisse anpassen und bestimmte Informationen im Cockpit überschreiben lassen.
+Standardmässig werden alle Nachrichten völlig unverändert erneut gesendet. Wenn du also z.B. die Konfiguration eines Gateways zwischenzeitlich geändert hast, hat dies keine Auswirkungen auf diese Nachricht. Du kannst dieses Verhalten an deine Bedürfnisse anpassen und bestimmte Informationen im Cockpit überschreiben lassen.
 
 {{% notice tip %}}
 Beachte, dass der Inhalt der Nachricht Informationen enthalten kann, die inzwischen ungültig geworden sind. Beispiele hierfür sind abgelaufene Aktivierungslinks (Opt-in-Token). Diese können nicht neu generiert werden.
