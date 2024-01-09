@@ -1,33 +1,99 @@
+@font-face {
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(../fonts/fira-code.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/fira-code.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../fonts/fira-code.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/fira-code.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(../fonts/fira-sans-300.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/fira-sans-400.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../fonts/fira-sans-500.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
 :root {
 
     --MAIN-TEXT-color: #2d3f4b; /* Color of text by default */
-    --MAIN-TITLES-TEXT-color: #5e5e5e; /* Color of titles h2-h3-h4-h5 */
-    --MAIN-LINK-color: #1C90F3; /* Color of links */
-    --MAIN-LINK-HOVER-color: #167ad0; /* Color of hovered links */
-    --MAIN-ANCHOR-color: #1C90F3; /* color of anchors on titles */
+    --MAIN-TITLES-TEXT-color: #a13609; /* Color of titles h2-h3-h4-h5 */
+    --MAIN-LINK-color: #457da7; /* Color of links */
+    --MAIN-LINK-HOVER-color: #457da7; /* Color of hovered links */
+    --MAIN-ANCHOR-color: #457da7; /* color of anchors on titles */
 
-    --MENU-HEADER-BG-color: #d7dbcc; /* Background color of menu header */
-    --MENU-HEADER-BORDER-color: #a13609; /*Color of menu header border */
+    --MENU-HEADER-BG-color: #457da7; /* Background color of menu header */
+    --MENU-HEADER-BORDER-color: #2d3f4b; /*Color of menu header border */
 
     --MENU-SEARCH-BG-color: #f1ecd4; /* Search field background color (by default borders + icons) */
     --MENU-SEARCH-BOX-color: #f1ecd4; /* Override search field border color */
     --MENU-SEARCH-BOX-ICONS-color: #a13609; /* Override search field icons color */
 
-    --MENU-SECTIONS-ACTIVE-BG-color: #d7dbcc; /* Background color of the active section and its childs */
-    --MENU-SECTIONS-BG-color: #d7dbcc; /* Background color of other sections */
+    --MENU-SECTIONS-ACTIVE-BG-color: #f2f2f2; /* Background color of the active section and its childs */
+    --MENU-SECTIONS-BG-color: #f2f2f2; /* Background color of other sections */
     --MENU-SECTIONS-LINK-color: #2d3f4b; /* Color of links in menu */
-    --MENU-SECTIONS-LINK-HOVER-color: #457da7; /* Color of links in menu, when hovered */
-    --MENU-SECTION-ACTIVE-CATEGORY-color: #457da7; /* Color of active category text */
-    --MENU-SECTION-ACTIVE-CATEGORY-BG-color: #d7dbcc; /* Color of background for the active category (only) */
+    --MENU-SECTIONS-LINK-HOVER-color: #a13609; /* Color of links in menu, when hovered */
+    --MENU-SECTION-ACTIVE-CATEGORY-color: #a13609; /* Color of active category text */
+    --MENU-SECTION-ACTIVE-CATEGORY-BG-color: #f1ecd4; /* Color of background for the active category (only) */
 
     --MENU-VISITED-color: #33a1ff; /* Color of 'page visited' icons in menu */
     --MENU-SECTION-HR-color: #20272b; /* Color of <hr> separator in menu */
 
+    --FONT-body: "Fira Sans", -apple-system, system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --FONT-headline: "Fira Code", -apple-system, system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 body {
     color: var(--MAIN-TEXT-color) !important;
-    font-family: -apple-system, system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-family: var(--FONT-body);
     font-weight: 400;
 }
 
@@ -39,6 +105,32 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
 h1, h2, h3, h4, h5 {
     color: var(--MAIN-TITLES-TEXT-color) !important;
     font-family: inherit;
+    font-weight: 400;
+}
+
+h1 {
+    margin-top: 1.5em;
+    font-family: var(--FONT-headline);
+    font-size: 36px;
+    line-height: 1.08333;
+    text-align: left;
+    text-transform: none;
+}
+
+h2 {
+    font-family: var(--FONT-headline);
+    font-size: 25px;
+    line-height: 1.32;
+}
+
+h3, .h3 {
+    font-size: 20px;
+    line-height: 1.15;
+}
+
+h4, .h4 {
+    margin-bottom: 1em;
+    font-family: var(--FONT-headline);
 }
 
 h5 {
@@ -98,7 +190,15 @@ a:hover {
 }
 
 #sidebar .searchbox * {
-    color: var(--MENU-SEARCH-BOX-ICONS-color);
+    color: var(--MAIN-TEXT-color);
+}
+
+#sidebar .searchbox input {
+    font-weight: 400;
+}
+
+#sidebar .searchbox input::placeholder {
+    color: var(--MAIN-TEXT-color);
 }
 
 #sidebar a {
@@ -141,7 +241,7 @@ a:hover {
 }
 
 #sidebar ul li.active > a {
-    border-left: 3px solid var(--MENU-HEADER-BG-color);
+    border-left: 3px solid var(--MENU-SECTION-ACTIVE-CATEGORY-color);
 }
 
 #footer {
@@ -150,22 +250,30 @@ a:hover {
     /*background: #172b3b;*/
 }
 
+#header {
+    display: flex;
+    justify-content: center;
+}
+
 #header a#logo {
     display: block;
+    text-align: center;
 }
 
 #logo svg {
     max-width: 184px;
     height: auto;
     margin: 0;
-    display: block;
+    display: inline;
 }
 
 #logo span {
     display: block;
     text-align: left;
     margin-top: 4px;
-    color: #457da7;
+    font-family: var(--FONT-headline);
+    font-weight: 700;
+    color: #fff;
 }
 
 #body img, #body .video-container {
@@ -226,10 +334,6 @@ div.notices.idea p:first-child::before {
     content: "\f0eb"; /* light bulb */
 }
 
-h1 {
-    text-align: left;
-}
-
 #body .padding {
     max-width: 1200px;
     margin-left: auto;
@@ -254,73 +358,6 @@ h1 {
 
 #body .nav:hover i {
     opacity: 1;
-}
-
-/*
- * A little ugly hack: I want only the subpages of /reference/hooks/
- * to not have text-transform: uppercase; on the h1,
- * not the /reference/hooks/ page as well.
- */
-body[data-url*="/reference/hooks/a"] h1,
-body[data-url*="/reference/hooks/b"] h1,
-body[data-url*="/reference/hooks/c"] h1,
-body[data-url*="/reference/hooks/d"] h1,
-body[data-url*="/reference/hooks/e"] h1,
-body[data-url*="/reference/hooks/f"] h1,
-body[data-url*="/reference/hooks/g"] h1,
-body[data-url*="/reference/hooks/h"] h1,
-body[data-url*="/reference/hooks/i"] h1,
-body[data-url*="/reference/hooks/j"] h1,
-body[data-url*="/reference/hooks/k"] h1,
-body[data-url*="/reference/hooks/l"] h1,
-body[data-url*="/reference/hooks/m"] h1,
-body[data-url*="/reference/hooks/n"] h1,
-body[data-url*="/reference/hooks/o"] h1,
-body[data-url*="/reference/hooks/p"] h1,
-body[data-url*="/reference/hooks/q"] h1,
-body[data-url*="/reference/hooks/r"] h1,
-body[data-url*="/reference/hooks/s"] h1,
-body[data-url*="/reference/hooks/t"] h1,
-body[data-url*="/reference/hooks/u"] h1,
-body[data-url*="/reference/hooks/v"] h1,
-body[data-url*="/reference/hooks/w"] h1,
-body[data-url*="/reference/hooks/x"] h1,
-body[data-url*="/reference/hooks/y"] h1,
-body[data-url*="/reference/hooks/z"] h1 {
-    text-transform: none;
-}
-
-/* hide level 3 in general */
-#sidebar ul.topics > li > ul > li > ul,
-#sidebar ul.topics > li.active > ul > li > ul,
-#sidebar ul.topics > li.parent > ul > li > ul {
-    display: none;
-}
-
-/* show level 3 when parent is active */
-#sidebar ul.topics > li.parent > ul > li.active > ul,
-#sidebar ul.topics > li.parent > ul > li.parent > ul {
-    display: block;
-}
-
-/* hide level 3 on hooks page */
-body[data-url*="/reference/hooks/"] #sidebar ul.topics > li.parent > ul > li.parent > ul {
-    display: none;
-}
-
-body[data-url*="/reference/hooks/"] #sidebar ul.topics > li.parent > ul > li.parent > a {
-    border-left: 3px solid var(--MENU-HEADER-BG-color);
-    background: var(--MENU-SECTION-ACTIVE-CATEGORY-BG-color);
-    color: var(--MENU-SECTION-ACTIVE-CATEGORY-color) !important;
-    padding-left: calc(1rem - 3px);
-    margin-left: -1rem;
-    margin-right: -1rem;
-    padding-right: 1rem;
-}
-
-/* allow more space for the namespaces table */
-body[data-url="/cookbook/namespaces/"] #body .padding {
-    max-width: none;
 }
 
 @media print {
@@ -473,117 +510,9 @@ option {
     color: white;
 }
 
-/* algolia */
 #sidebar {
+    font-weight: 400 !important;
     z-index: 1;
-}
-
-.algolia-searchbox {
-    margin-top: 1rem;
-    position: relative;
-    border: 1px solid var(--MENU-SEARCH-BOX-color);
-    background: var(--MENU-SEARCH-BG-color);
-    border-radius: 4px;
-}
-
-.algolia-searchbox .algolia-autocomplete {
-    display: block !important;
-}
-
-.algolia-searchbox .algolia-autocomplete .ds-dropdown-menu {
-    max-width: 800px;
-    min-width: 600px;
-}
-
-.algolia-searchbox label[for="algolia-search"] {
-    color: rgba(255, 255, 255, 0.8);
-    position: absolute;
-    left: 10px;
-    top: 3px;
-}
-
-.algolia-searchbox span[data-search-clear] {
-    color: rgba(255, 255, 255, 0.6);
-    position: absolute;
-    right: 10px;
-    top: 3px;
-    cursor: pointer;
-}
-
-.algolia-searchbox span[data-search-clear]:hover {
-    color: rgba(255, 255, 255, 0.9);
-}
-
-.algolia-searchbox input[type="search"] {
-    display: inline-block;
-    color: #fff;
-    width: 100%;
-    height: 30px;
-    background: transparent;
-    border: 0;
-    padding: 0 25px 0 30px;
-    margin: 0;
-    font-weight: 300;
-    appearance: none;
-    -webkit-appearance: none;
-}
-
-.algolia-searchbox input[type="search"]::-webkit-input-placeholder {
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.algolia-searchbox input[type="search"]::-moz-placeholder {
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.algolia-searchbox input[type="search"]:-moz-placeholder {
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.algolia-searchbox input[type="search"]:-ms-input-placeholder {
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.DocSearch-Button {
-    --docsearch-muted-color: rgba(255, 255, 255, 0.6);
-    --docsearch-text-color: rgba(255, 255, 255, 0.6);
-    --docsearch-searchbox-background: transparent;
-    --docsearch-searchbox-focus-background: transparent;
-    --docsearch-searchbox-shadow: none;
-    margin-left: 0;
-    height: 30px;
-    width: 100%;
-    box-sizing: border-box;
-    font-weight: 300;
-}
-
-.DocSearch .DocSearch-Search-Icon {
-    width: 18px;
-    height: auto;
-}
-
-.DocSearch .DocSearch-Button-Placeholder {
-    font-size: inherit;
-    padding-left: 5px;
-    padding-right: 0;
-}
-
-.DocSearch .DocSearch-Button-Key {
-    --docsearch-muted-color: rgb(150, 159, 175);
-    --docsearch-text-color: rgb(150, 159, 175);
-}
-
-.DocSearch .DocSearch-Input {
-    border: 0;
-    box-shadow: none;
-    background-color: transparent;
-    margin-bottom: 0;
-    padding: 0 0 0 8px;
-    width: 80%;
-    appearance: none;
-    -webkit-appearance: none;
-    border-radius: 0;
-    transition: none;
 }
 
 #body .tab-content .tab-item > *:first-child {
