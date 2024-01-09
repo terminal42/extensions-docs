@@ -81,8 +81,8 @@
     --MENU-SECTIONS-BG-color: #f2f2f2; /* Background color of other sections */
     --MENU-SECTIONS-LINK-color: #2d3f4b; /* Color of links in menu */
     --MENU-SECTIONS-LINK-HOVER-color: #a13609; /* Color of links in menu, when hovered */
-    --MENU-SECTION-ACTIVE-CATEGORY-color: #a13609; /* Color of active category text */
-    --MENU-SECTION-ACTIVE-CATEGORY-BG-color: #f1ecd4; /* Color of background for the active category (only) */
+    --MENU-SECTION-ACTIVE-CATEGORY-color: #fff; /* Color of active category text */
+    --MENU-SECTION-ACTIVE-CATEGORY-BG-color: #a13609; /* Color of background for the active category (only) */
 
     --MENU-VISITED-color: #33a1ff; /* Color of 'page visited' icons in menu */
     --MENU-SECTION-HR-color: #20272b; /* Color of <hr> separator in menu */
@@ -241,7 +241,7 @@ a:hover {
 }
 
 #sidebar ul li.active > a {
-    border-left: 3px solid var(--MENU-SECTION-ACTIVE-CATEGORY-color);
+    border-left: 3px solid var(--MENU-SECTION-ACTIVE-CATEGORY-BG-color);
 }
 
 #footer {
