@@ -260,9 +260,11 @@ a:hover {
     text-align: center;
 }
 
-#logo svg {
-    max-width: 184px;
+#logo img {
+    width: auto;
     height: auto;
+    max-height: 100px;
+    max-width: 100%;
     margin: 0;
     display: inline;
 }
