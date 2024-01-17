@@ -1,0 +1,4 @@
+contentDir: '../docs/changelanguage'
+title: 'Change Language'
+defaultContentLanguageInSubdir: true
+DefaultContentLanguage: en
