@@ -3,6 +3,18 @@ title: "Logs"
 weight: 4
 ---
 
+{{% notice warning %}}
+Beachte, dass du für diese Funktion sicherstellen musst, dass **gesetzliche datenschutzrechtliche Vorgaben** wie u.a. die der Datenschutz-Grundverordnung der Europäischen Union (DSGVO) eingehalten werden! \
+\
+Solltest du vollends auf Logging verzichten, aber von den anderen Funktionen des Notification Center Pros profitieren wollen, kannst du mittels folgender Konfiguration Logging komplett deaktivieren:
+
+```yaml
+terminal42_notification_center_pro:
+    logs:
+        retention_period: 0
+```
+{{% /notice %}}
+
 Das Notification Center Pro protokolliert automatisch alle Benachrichtigungen, die gesendet wurden. Normalerweise ist das
 an sich schon sehr hilfreich, aber das Notification Center Pro bietet darüber hinaus noch weitere Funktionen!
 
@@ -46,6 +58,8 @@ terminal42_notification_center_pro:
         retention_period: 14
 ```
 
+Du kannst die Funktion auch deaktivieren, indem du die `retention_period` auf `0` setzt.
+
 {{% notice info %}}
-Stelle sicher, dass du den Cache mit dem Contao Manager oder dem Befehl `cache:clear` neu aufbaust.
+Stelle sicher, dass du den Cache mit dem Befehl `cache:clear` neu aufbaust und die Datenbankmigrationen mit `contao:migrate` ausführst (beides natürlich auch im Contao Manager möglich).
 {{% /notice %}}
