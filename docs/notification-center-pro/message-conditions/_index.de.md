@@ -1,6 +1,6 @@
 ---
 title: "Bedingungen für Nachrichten"
-weight: 2
+weight: 100
 ---
 
 Mit eigenen Bedingungen für Nachrichten kannst du zusätzlich zu den Standardfeldern Bedingungen definieren, die für einen Versand erfüllt sein müssen.

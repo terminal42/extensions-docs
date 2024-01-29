@@ -1,6 +1,6 @@
 ---
 title: "Conditions for messages"
-weight: 2
+weight: 100
 ---
 
 With conditions for messages, you can define conditions in addition to the standard publication fields that must be met for a message to be sent.

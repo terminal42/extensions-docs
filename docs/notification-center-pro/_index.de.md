@@ -13,9 +13,9 @@ folgenden Funktionen:
 
 Mit [Bedingungen für Nachrichten](./message-conditions) kannst du ganze Nachrichten vom Versand ausschliessen und sie so bspw. abhängig von Formularfeldern verschicken lassen.
 
-## Void Gateway
+## Eigene Simple Tokens
 
-Das [Void Gateway](./void-gateway) sendet überhaupt keine Nachricht (`void` ist Englisch für "Nichts"). Stattdessen täuscht es nur eine erfolgreiche Zustellung vor, um das Testing zu vereinfachen.
+Du kannst bequem deine [eigenen, benutzerdefinierten Simple Tokens](./custom-tokens) auf der Grundlage anderer Token erstellen. Dies erlaubt es dir viel flexibler zu sein, indem du Informationen aus anderen Token extrahieren, sie kombinieren oder praktisch alles damit tun kannst, was du mit Twig tun kannst.
 
 ## Logs
 
@@ -26,8 +26,9 @@ Die [Logs](./logs):
 - ermöglichen das erneute Versenden von Benachrichtigungen direkt vom Backend aus und erlauben sogar die Anpassung bestimmter Informationen, z.B. Simple Tokens, damit du Dinge einfach testen kannst
 - bieten einen Diff-Viewer, um Unterschiede zwischen Log-Einträgen zu sehen, die auf der Grundlage eines anderen Log-Eintrags gesendet wurden
 
-## Eigene Simple Tokens
+## Void Gateway
 
-Du kannst bequem deine [eigenen, benutzerdefinierten Simple Tokens](./custom-tokens) auf der Grundlage anderer Token erstellen. Dies erlaubt es dir viel flexibler zu sein, indem du Informationen aus anderen Token extrahieren, sie kombinieren oder praktisch alles damit tun kannst, was du mit Twig tun kannst.
+Das [Void Gateway](./void-gateway) sendet überhaupt keine Nachricht (`void` ist Englisch für "Nichts"). Stattdessen täuscht es nur eine erfolgreiche Zustellung vor, um das Testing zu vereinfachen.
+
 
 [NC]: https://extensions.contao.org/?p=terminal42%2Fnotification_center

@@ -13,10 +13,11 @@ following features:
 
 With [conditions for messages](./message-conditions) you can exclude entire messages from being sent and thus have them sent depending on form fields, for example.
 
-## Void Gateway
+## Custom Simple Tokens
 
-The [Void Gateway](./void-gateway) does not send any message at all. Instead, it just fakes a successful delivery allowing
-for easier testing.
+You can conveniently create your [own, custom Simple Tokens](./custom-tokens) based on other tokens. This will allow you to be a
+lot more flexible by extracting partial information from other tokens, combining them or virtually doing whatever you can do
+with Twig with them.
 
 ## Logs
 
@@ -28,10 +29,9 @@ The [Logs](./logs):
   Simple Tokens, so you can test things easily
 - provides a diff viewer to see differences between log entries being sent based on another one
 
-## Custom Simple Tokens
+## Void Gateway
 
-You can conveniently create your [own, custom Simple Tokens](./custom-tokens) based on other tokens. This will allow you to be a 
-lot more flexible by extracting partial information from other tokens, combining them or virtually doing whatever you can do
-with Twig with them.
+The [Void Gateway](./void-gateway) does not send any message at all. Instead, it just fakes a successful delivery allowing
+for easier testing.
 
 [NC]: https://extensions.contao.org/?p=terminal42%2Fnotification_center

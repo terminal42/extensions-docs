@@ -1,5 +1,6 @@
 ---
 title: "Custom tokens"
+weight: 200
 ---
 
 With Notification Center Pro, you can create custom tokens which you can then use in your notifications. Custom 

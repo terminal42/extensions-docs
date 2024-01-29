@@ -1,6 +1,6 @@
 ---
 title: "Void Gateway"
-weight: 3
+weight: 400
 ---
 
 The `Void Gateway` is a very useful testing Gateway. It mocks the configured target Gateway and mimicks a successful 

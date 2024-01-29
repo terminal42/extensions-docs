@@ -1,6 +1,6 @@
 ---
 title: "Logs"
-weight: 4
+weight: 300
 ---
 
 {{% notice warning %}}
