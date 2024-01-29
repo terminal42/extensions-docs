@@ -1,6 +1,6 @@
 ---
 title: "Logs"
-weight: 3
+weight: 4
 ---
 
 Notification Center Pro automatically logs all the notifications that have been sent. Usually, this is already very 

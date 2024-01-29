@@ -9,6 +9,10 @@ Notification Center Pro ist eine kommerzielle Erweiterung für unser [kostenlose
 Zusätzlich zur kostenlosen Version erweitert Notification Center Pro dein Notification Center-Erlebnis um die
 folgenden Funktionen:
 
+## Versandbedingungen für Nachrichten
+
+Mit [Bedingungen für Nachrichten](./message-conditions) kannst du ganze Nachrichten vom Versand ausschliessen und sie so bspw. abhängig von Formularfeldern verschicken lassen.
+
 ## Void Gateway
 
 Das [Void Gateway](./void-gateway) sendet überhaupt keine Nachricht (`void` ist Englisch für "Nichts"). Stattdessen täuscht es nur eine erfolgreiche Zustellung vor, um das Testing zu vereinfachen.

@@ -1,6 +1,6 @@
 ---
 title: "Void Gateway"
-weight: 2
+weight: 3
 ---
 
 Das `Void Gateway` ist ein sehr nützliches Test-Gateway. Es simuliert das konfigurierte Ziel-Gateway und ahmt eine erfolgreiche

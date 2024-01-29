@@ -1,6 +1,6 @@
 ---
 title: "Logs"
-weight: 3
+weight: 4
 ---
 
 Das Notification Center Pro protokolliert automatisch alle Benachrichtigungen, die gesendet wurden. Normalerweise ist das

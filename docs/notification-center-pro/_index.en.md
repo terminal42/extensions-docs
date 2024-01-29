@@ -9,6 +9,10 @@ Notification Center Pro is a commercial extension to our [free and very popular 
 On top of using the free version, Notification Center Pro will enhance your Notification Center experience with the 
 following features:
 
+## Dispatch conditions for messages
+
+With [conditions for messages](./message-conditions) you can exclude entire messages from being sent and thus have them sent depending on form fields, for example.
+
 ## Void Gateway
 
 The [Void Gateway](./void-gateway) does not send any message at all. Instead, it just fakes a successful delivery allowing
