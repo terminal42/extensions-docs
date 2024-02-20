@@ -7,7 +7,7 @@ With Notification Center Pro, you can create custom tokens which you can then us
 tokens are based on Twig templates which means you can access all the goodness you know and love from Contao 
 templating.
 
-As the possibilities are virtually endless, let's look at an example. You can also take a look at our [example collection](./example-collection) where we collect common use cases. If you have something you think other users could use, please let us know!
+As the possibilities are virtually endless, let's look at an example. You can also take a look at our [example collection]({{< ref "/custom-tokens/example-collection" >}}) where we collect common use cases. If you have something you think other users could use, please let us know!
 
 ## Example use case
 

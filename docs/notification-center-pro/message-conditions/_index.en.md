@@ -23,5 +23,5 @@ Now we can use `##form_urgent## === 'yes'` to send an entire message only if the
 ![Screenshot of the condition in the back end]({{% asset "/notification-center-pro/images/screenshot_message_condition.png" %}}?classes=shadow)
 
 {{% notice tip %}}
-This function is particularly powerful in combination with [custom tokens](./../custom-tokens)!
+This function is particularly powerful in combination with [custom tokens]({{< ref "/custom-tokens" >}})!
 {{% /notice %}}

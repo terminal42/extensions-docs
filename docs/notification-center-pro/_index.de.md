@@ -11,15 +11,15 @@ folgenden Funktionen:
 
 ## Versandbedingungen für Nachrichten
 
-Mit [Bedingungen für Nachrichten](./message-conditions) kannst du ganze Nachrichten vom Versand ausschliessen und sie so bspw. abhängig von Formularfeldern verschicken lassen.
+Mit [Bedingungen für Nachrichten]({{< ref "/message-conditions" >}}) kannst du ganze Nachrichten vom Versand ausschliessen und sie so bspw. abhängig von Formularfeldern verschicken lassen.
 
 ## Eigene Simple Tokens
 
-Du kannst bequem deine [eigenen, benutzerdefinierten Simple Tokens](./custom-tokens) auf der Grundlage anderer Token erstellen. Dies erlaubt es dir viel flexibler zu sein, indem du Informationen aus anderen Token extrahieren, sie kombinieren oder praktisch alles damit tun kannst, was du mit Twig tun kannst.
+Du kannst bequem deine [eigenen, benutzerdefinierten Simple Tokens]({{< ref "/custom-tokens" >}}) auf der Grundlage anderer Token erstellen. Dies erlaubt es dir viel flexibler zu sein, indem du Informationen aus anderen Token extrahieren, sie kombinieren oder praktisch alles damit tun kannst, was du mit Twig tun kannst.
 
 ## Logs
 
-Die [Logs](./logs):
+Die [Logs]({{< ref "/logs" >}}):
 
 - erlauben es, alle über das Notification Center gesendeten Benachrichtigungen anzuzeigen
 - werden für eine konfigurierbare Anzahl von Tagen aufbewahrt (standardmässig `7`)
@@ -28,7 +28,7 @@ Die [Logs](./logs):
 
 ## Void Gateway
 
-Das [Void Gateway](./void-gateway) sendet überhaupt keine Nachricht (`void` ist Englisch für "Nichts"). Stattdessen täuscht es nur eine erfolgreiche Zustellung vor, um das Testing zu vereinfachen.
+Das [Void Gateway]({{< ref "/void-gateway" >}}) sendet überhaupt keine Nachricht (`void` ist Englisch für "Nichts"). Stattdessen täuscht es nur eine erfolgreiche Zustellung vor, um das Testing zu vereinfachen.
 
 
 [NC]: https://extensions.contao.org/?p=terminal42%2Fnotification_center

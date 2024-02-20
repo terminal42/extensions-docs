@@ -23,5 +23,5 @@ Nun können wir mit `##form_urgent## === 'yes'` eine gesamte Nachricht nur dann 
 ![Screenshot der Bedingung im Backend]({{% asset "/notification-center-pro/images/screenshot_message_condition.png" %}}?classes=shadow)
 
 {{% notice tip %}}
-Diese Funktion ist besonders mächtig im Zusammenspiel mit [benutzerdefinierten Tokens](./../custom-tokens)!
+Diese Funktion ist besonders mächtig im Zusammenspiel mit [benutzerdefinierten Tokens]({{< ref "/custom-tokens" >}})!
 {{% /notice %}}

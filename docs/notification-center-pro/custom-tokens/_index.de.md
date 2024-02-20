@@ -6,7 +6,7 @@ weight: 200
 
 Mit dem Notification Center Pro kannst du benutzerdefinierte Tokens erstellen, die du dann in deinen Benachrichtigungen verwenden kannst. Eigene Tokens basieren auf Twig-Template, d.h. du kannst von allen Twig-Funktionen profitieren, die du dir vom Contao-Templating gewohnt bist.
 
-Da die Möglichkeiten praktisch endlos sind, sehen wir uns ein Beispiel an. Du kannst auch einen Blick auf unsere [Beispielsammlung](./example-collection) werfen, in der wir gängige Anwendungsfälle sammeln. Wenn du etwas hast, von dem du denkst, dass andere es verwenden könnten, lass es uns bitte wissen!
+Da die Möglichkeiten praktisch endlos sind, sehen wir uns ein Beispiel an. Du kannst auch einen Blick auf unsere [Beispielsammlung]({{< ref "/custom-tokens/example-collection" >}}) werfen, in der wir gängige Anwendungsfälle sammeln. Wenn du etwas hast, von dem du denkst, dass andere es verwenden könnten, lass es uns bitte wissen!
 
 ## Beispiel Anwendungsfall
 
