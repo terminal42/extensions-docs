@@ -1,5 +1,8 @@
 # terminal42 extensions documentation framework
 
+This repository holds the documentation books hosted on https://extensions.terminal42.ch/docs. It contains documentation
+for both, commercial as well as free extensions. Feel free to contribute to whichever you like :-)
+
 ## Cloning
 
 The project installs the Hugo Learn theme as a git submodule. Thus, when cloning
