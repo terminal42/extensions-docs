@@ -1,0 +1,4 @@
+contentDir: '../docs/notification-center'
+title: 'Notification Center'
+defaultContentLanguageInSubdir: true
+DefaultContentLanguage: en
