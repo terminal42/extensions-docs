@@ -3,8 +3,6 @@ title: "Users"
 weight: 200
 ---
 
-# Users
-
 The Notification Center has been around for over 10 years. That's why many users are
 familiar with its configuration and it's only roughly documented here.
 

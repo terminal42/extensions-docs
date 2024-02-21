@@ -3,8 +3,6 @@ title: "Configuration"
 weight: 100
 ---
 
-# Configuration
-
 As with every Symfony Bundle or Contao extension, you may configure the settings of the Notification
 Center using your `config/config.yaml`.
 

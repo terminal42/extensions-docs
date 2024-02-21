@@ -2,8 +2,6 @@
 title: "Developers"
 ---
 
-# Developers
-
 The Notification Center has been built with developers in mind. Its main purpose is to provide a solution for
 the typical "Dear customer, what would you like to have the e-mail notification say and how should it be translated
 into French, German etc.?" question.
