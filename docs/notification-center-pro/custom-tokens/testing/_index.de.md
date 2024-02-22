@@ -28,6 +28,10 @@ Verwende das vom Notification Center Pro bereitgestellte `Void Gateway`, um eine
 
 ## Debugging
 
+{{% notice warning %}}
+Nachfolgende Beschreibung funktioniert nur, wenn du dich im **Debug-Modus von Contao** befindest!
+{{% /notice %}}
+
 Verwende `{{ dump() }}` in deinem Twig-Template. Du kannst dann sowohl die `parsedTokens` als auch die `rawTokens` bequem
 betrachten:
 

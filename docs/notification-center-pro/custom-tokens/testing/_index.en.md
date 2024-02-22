@@ -32,7 +32,12 @@ to very easily generate a few test cases based on which you can then create and 
 
 ## Debugging
 
+{{% notice warning %}}
+The following manual only works if you are in **Contao debug mode**!
+{{% /notice %}}
+
 Use `{{ dump() }}` as your Twig template. You will then be able to easily inspect both, the `parsedTokens` as well 
 as the `rawTokens`:
 
 ![Screenshot of the dump output]({{% asset "/notification-center-pro/images/screenshot_dump.png" %}}?classes=shadow)
+
