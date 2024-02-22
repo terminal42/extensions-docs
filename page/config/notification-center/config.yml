@@ -1,4 +1,4 @@
 contentDir: '../docs/notification-center'
 title: 'Notification Center'
-defaultContentLanguageInSubdir: true
+defaultContentLanguageInSubdir: false #ToDo: Change, when second language has been added
 DefaultContentLanguage: en
