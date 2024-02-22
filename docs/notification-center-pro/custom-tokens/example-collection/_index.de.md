@@ -24,9 +24,11 @@ Gesamttotal: ##gesamttotal##
 So könnte unsere Twig-Logik könnte dann wie folgt aussehen:
 
 ```twig
-{% set subtotal = rawTokens.byName('form_anzahl_prospekte').value * 4 %}
-{% set mwst = subtotal * 19 / 100 %}
-{% set gesamttotal = subtotal + mwst %}
+{% if rawTokens.has('form_anzahl_prospekte') %}
+    {% set subtotal = rawTokens.byName('form_anzahl_prospekte').value * 4 %}
+    {% set mwst = subtotal * 19 / 100 %}
+    {% set gesamttotal = subtotal + mwst %}
+{% endif %}
 ```
 
 Diese Logik kopieren wir nun in 3 Tokens und geben jeweils die gewünschte Variable aus:

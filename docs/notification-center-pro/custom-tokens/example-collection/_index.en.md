@@ -23,9 +23,11 @@ Total amount: ##total##
 So könnte unsere Twig-Logik könnte dann wie folgt aussehen:
 
 ```twig
-{% set subtotal = rawTokens.byName('form_number_of_brochures').value * 4 %}
-{% set tax = subtotal * 19 / 100 %}
-{% set total = subtotal + tax %}
+{% if rawTokens.has('form_anzahl_prospekte') %}
+    {% set subtotal = rawTokens.byName('form_number_of_brochures').value * 4 %}
+    {% set tax = subtotal * 19 / 100 %}
+    {% set total = subtotal + tax %}
+{% endif %}
 ```
 
 We now copy this logic into 3 tokens and output the desired variable in each case:
