@@ -21,7 +21,7 @@ Mehrwertsteuer 19%: ##mwst##
 Gesamttotal: ##gesamttotal##
 ```
 
-So könnte unsere Twig-Logik könnte dann wie folgt aussehen:
+So könnte unsere Twig-Logik dann aussehen:
 
 ```twig
 {% if rawTokens.has('form_anzahl_prospekte') %}
