@@ -89,6 +89,8 @@
     --MENU-VISITED-color: #33a1ff; /* Color of 'page visited' icons in menu */
     --MENU-SECTION-HR-color: #20272b; /* Color of <hr> separator in menu */
 
+    --TOP-BAR-BG-color: #fff;
+
     --FONT-body: "Fira Sans", -apple-system, system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     --FONT-headline: "Fira Code", -apple-system, system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 
