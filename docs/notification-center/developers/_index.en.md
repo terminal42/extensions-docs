@@ -107,9 +107,9 @@ class FormGeneratorNotificationType implements NotificationTypeInterface
     public function getTokenDefinitions(): array
     {
         return [
-            $this->factory->create(AnythinkTokenDefinition::class, 'form_*', 'form.form_*'),
-            $this->factory->create(AnythinkTokenDefinition::class, 'formconfig_*', 'form.formconfig_*'),
-            $this->factory->create(AnythinkTokenDefinition::class, 'formlabel_*', 'form.formlabel_*'),
+            $this->factory->create(AnythingTokenDefinition::class, 'form_*', 'form.form_*'),
+            $this->factory->create(AnythingTokenDefinition::class, 'formconfig_*', 'form.formconfig_*'),
+            $this->factory->create(AnythingTokenDefinition::class, 'formlabel_*', 'form.formlabel_*'),
             $this->factory->create(TextTokenDefinition::class, 'raw_data', 'form.raw_data'),
             $this->factory->create(TextTokenDefinition::class, 'raw_data_filled', 'form.raw_data_filled'),
         ];
@@ -140,7 +140,7 @@ them:
 
 Basically, the purpose of a token definition is to describe its values. For example, in the e-mail settings for
 the recipient, we don't want anything different from `EmailTokenDefinition` instances to be allowed. You cannot send an e-mail
-to `<html><title>Foobar</title></html>` - it must be an e-mail.
+to `<html><title>Foobar</title></html>` - it must be an e-mail address.
 
 In the DCA, you can then configure which token definition context is required:
 
