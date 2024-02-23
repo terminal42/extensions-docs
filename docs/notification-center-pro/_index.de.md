@@ -13,6 +13,11 @@ folgenden Funktionen:
 
 Mit [Bedingungen für Nachrichten]({{< ref "/message-conditions" >}}) kannst du ganze Nachrichten vom Versand ausschliessen und sie so bspw. abhängig von Formularfeldern verschicken lassen.
 
+## Weitere, mitgelieferte Simple-Tokens
+
+Formularfelder mit Optionen, wie bspw. Dropdowns oder Checkboxen, enthalten standardmässig die Rohwerte im jeweiligen Token.
+Das [`formoptions_*`- Token]({{< ref "/additional-tokens" >}}) löst dieses Problem auf die bequemste Art und Weise für dich.
+
 ## Eigene Simple Tokens
 
 Du kannst bequem deine [eigenen, benutzerdefinierten Simple Tokens]({{< ref "/custom-tokens" >}}) auf der Grundlage anderer Token erstellen. Dies erlaubt es dir viel flexibler zu sein, indem du Informationen aus anderen Token extrahieren, sie kombinieren oder praktisch alles damit tun kannst, was du mit Twig tun kannst.

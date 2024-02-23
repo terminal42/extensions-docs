@@ -13,6 +13,11 @@ following features:
 
 With [conditions for messages]({{< ref "/message-conditions" >}}) you can exclude entire messages from being sent and thus have them sent depending on form fields, for example.
 
+## More form tokens
+
+Form fields with options, such as dropdowns or checkboxes, contain the raw values in the respective tokens by default.
+The [`formoptions_*`- token]({{< ref "/additional-tokens" >}}) solves this problem in the most convenient way for you.
+
 ## Custom Simple Tokens
 
 You can conveniently create your [own, custom Simple Tokens]({{< ref "/custom-tokens" >}}) based on other tokens. This will allow you to be a
