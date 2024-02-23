@@ -107,9 +107,9 @@ class FormGeneratorNotificationType implements NotificationTypeInterface
     public function getTokenDefinitions(): array
     {
         return [
-            $this->factory->create(AnythinkTokenDefinition::class, 'form_*', 'form.form_*'),
-            $this->factory->create(AnythinkTokenDefinition::class, 'formconfig_*', 'form.formconfig_*'),
-            $this->factory->create(AnythinkTokenDefinition::class, 'formlabel_*', 'form.formlabel_*'),
+            $this->factory->create(AnythingTokenDefinition::class, 'form_*', 'form.form_*'),
+            $this->factory->create(AnythingTokenDefinition::class, 'formconfig_*', 'form.formconfig_*'),
+            $this->factory->create(AnythingTokenDefinition::class, 'formlabel_*', 'form.formlabel_*'),
             $this->factory->create(TextTokenDefinition::class, 'raw_data', 'form.raw_data'),
             $this->factory->create(TextTokenDefinition::class, 'raw_data_filled', 'form.raw_data_filled'),
         ];
