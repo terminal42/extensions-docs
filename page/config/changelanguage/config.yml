@@ -1,4 +1,4 @@
 contentDir: '../docs/changelanguage'
 title: 'Change Language'
-defaultContentLanguageInSubdir: false #ToDo: Change, when second language has been added
+defaultContentLanguageInSubdir: true
 DefaultContentLanguage: en
