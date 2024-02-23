@@ -140,7 +140,7 @@ them:
 
 Basically, the purpose of a token definition is to describe its values. For example, in the e-mail settings for
 the recipient, we don't want anything different from `EmailTokenDefinition` instances to be allowed. You cannot send an e-mail
-to `<html><title>Foobar</title></html>` - it must be an e-mail.
+to `<html><title>Foobar</title></html>` - it must be an e-mail address.
 
 In the DCA, you can then configure which token definition context is required:
 
