@@ -10,11 +10,11 @@ Da die Möglichkeiten praktisch endlos sind, sehen wir uns ein Beispiel an. Du k
 
 ## Beispiel Anwendungsfall
 
-Stell dir sich vor, du hast im Contao-Formulargenerator ein Checkbox-Menü mit dem Namen `colors` hinzugefügt, das wie folgt aussehen würde:
+Stell dir vor, du hast im Contao-Formulargenerator ein Checkbox-Menü mit dem Namen `colors` hinzugefügt, das wie folgt aussehen würde:
 
 ![Screenshot eines Formularfelds mit Farbauswahl]({{% asset "/notification-center-pro/images/colors.png" %}}?width=200px&classes=shadow)
 
-Im Notification Center kriegst du nun das folgende Token und den dazugehörigen Wert:
+Im Notification Center bekommst du nun das folgende Token und den dazugehörigen Wert:
 
 | Token name            | Value         |
 |-----------------------|---------------|
