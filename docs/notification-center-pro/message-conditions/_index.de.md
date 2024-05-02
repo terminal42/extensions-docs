@@ -22,6 +22,12 @@ Nun können wir mit `##form_urgent## === 'yes'` eine gesamte Nachricht nur dann 
 
 ![Screenshot der Bedingung im Backend]({{% asset "/notification-center-pro/images/screenshot_message_condition.png" %}}?classes=shadow)
 
+{{% notice idea %}}
+Technisch gesehen brauchst du die `##` nicht, wenn du Bedingungen definierst. Sie werden entfernt, bevor sie ausgewertet werden. Ihre Verwendung
+dient nur zu deiner eigenen Benutzerfreundlichkeit, da sie die automatische Vervollständigung aktivieren. Du kannst aber genauso gut direkt `form_urgent === 'yes'` schreiben. Beide
+Varianten werden funktionieren. Bedingungen innerhalb des E-Mail-Textes z.B. werden ja auch ohne die `##` geschrieben (z.B. `{if form_urgent === 'yes'}`).
+{{% /notice %}}
+
 {{% notice tip %}}
 Diese Funktion ist besonders mächtig im Zusammenspiel mit [benutzerdefinierten Tokens]({{< ref "/custom-tokens" >}})!
 {{% /notice %}}
