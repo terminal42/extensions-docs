@@ -22,6 +22,8 @@ Now we can use `##form_urgent## === 'yes'` to send an entire message only if the
 
 ![Screenshot of the condition in the back end]({{% asset "/notification-center-pro/images/screenshot_message_condition.png" %}}?classes=shadow)
 
+To be able to use SimpleToken's auto-completion, the field names are entered as usual with `##form_fieldname####`. The `## characters` are then automatically removed when saving.
+
 {{% notice tip %}}
 This function is particularly powerful in combination with [custom tokens]({{< ref "/custom-tokens" >}})!
 {{% /notice %}}
