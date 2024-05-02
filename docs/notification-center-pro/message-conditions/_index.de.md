@@ -22,6 +22,8 @@ Nun können wir mit `##form_urgent## === 'yes'` eine gesamte Nachricht nur dann 
 
 ![Screenshot der Bedingung im Backend]({{% asset "/notification-center-pro/images/screenshot_message_condition.png" %}}?classes=shadow)
 
+Um die Autovervollständigung von SimpleToken nutzen zu können, werden die Feldnamen wie gewohnt mit `##form_feldname##` eingegeben. Die `##-Zeichen` werden dann beim Speichern automatisch entfernt.
+
 {{% notice tip %}}
 Diese Funktion ist besonders mächtig im Zusammenspiel mit [benutzerdefinierten Tokens]({{< ref "/custom-tokens" >}})!
 {{% /notice %}}
