@@ -15,6 +15,6 @@ Kann eine Bestellung nicht in einem Paket versendet werden, gibt es zwei Möglic
    ![Pakete hinzufügen](parcels.png)
 
 {{% notice info %}}
-Bei mehreren Paketen ist unbedingt auf das Brutto-Gewicht zu achten. Wurden in den Produktdaten ein Gewicht eingetragen,
-berechnet Isotope hier alle Artikel zusammen! Das Gewicht muss also entsprechend dem Paketinhalt korrigiert werden.
+Bei mehreren Paketen ist unbedingt auf das Brutto-Gewicht zu achten. Wurde in den Produktdaten ein Gewicht eingetragen,
+steht in diesem Feld automatisch das Total aller Artikel! Der Wert muss also entsprechend dem Paketinhalt korrigiert werden.
 {{% /notice %}}

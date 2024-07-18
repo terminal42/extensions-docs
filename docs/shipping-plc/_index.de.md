@@ -4,8 +4,9 @@ title: "Post-Labelcenter"
 
 # Post-Labelcenter 
 
-Mit Hilfe der Versandsoftware [**Post-Labelcenter**][PLC] erstellst du rasch und gemäß den Anforderungen der Post
-deine Paketaufkleber, Sendungslisten und die dazu notwendigen Avisodaten für eine optimale logistische Abwicklung.
+Mit Hilfe der Versandsoftware [**Post-Labelcenter**][PLC] erstellst du rasch und gemäß den Anforderungen der 
+Österreichischen Post deine Paketaufkleber, Sendungslisten und die dazu notwendigen Avisodaten für eine 
+optimale logistische Abwicklung.
 
 ## Integration in Isotope eCommerce
 

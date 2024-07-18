@@ -2,3 +2,11 @@ contentDir: '../docs/shipping-plc'
 title: 'Post-Labelcenter'
 defaultContentLanguageInSubdir: true
 DefaultContentLanguage: de
+
+menu:
+    shortcuts:
+        -
+            name: "<i class='fas fa-shopping-cart'></i> Extension Store"
+            identifier: "ds"
+            url: "https://extensions.terminal42.ch/p/shipping-plc"
+            weight: 10
