@@ -16,7 +16,7 @@ PostFinance E-Finance und TWINT. Die Erweiterung für Isotope eCommerce unterst�
 
 ## Einrichtung
 
-Nach der Installation gemäss [Extension Store](https://extensions.terminal42.ch) steht die neue Zahlungsmethode im 
+Nach der Installation gemäss [Extension Store][install] steht die neue Zahlungsmethode im 
 Isotope Backend zur Verfügung.
 
 ![Zahlungsmodul auswählen](modul.png)
@@ -28,6 +28,7 @@ werden tatsächliche Kosten berechnet und können echte Transaktionen durchgefü
 
 [Weiterlesen](./einrichtung/)
 
+[install]: https://extensions.terminal42.ch/de/faq#handorgel3
 [website]: https://www.postfinance.ch/de/unternehmen/produkte/einkassieren/onlineshop.html
 [all-in-one]: https://www.postfinance.ch/de/unternehmen/produkte/einkassieren/onlineshop/e-payment-all-in-one.html
 [flex]: https://www.postfinance.ch/de/unternehmen/produkte/einkassieren/onlineshop/e-payment-flex.html
