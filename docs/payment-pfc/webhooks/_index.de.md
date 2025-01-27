@@ -41,8 +41,7 @@ Nun müssen wir noch mitteilen, welche Informationen uns interessieren. Lege daz
 
 Wähle im ersten Schritt **Transaktion** als Entität. Im nächsten Schritt musst du dann die entsprechenden Felder 
 ausfüllen. Gib dem Listener einen Namen, wähle die neue angelegte URL aus und selektiere mindestens 
-die folgende vier _Entity States_:
-- Bestätigt
+die folgende drei _Entity States_:
 - Autorisiert
 - Abgeschlossen
 - Liefern
