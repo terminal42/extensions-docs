@@ -1,10 +1,10 @@
 contentDir: '../docs'
-theme: 'hugo-theme-learn'
+theme: 'hugo-theme-relearn'
 canonifyURLs: true
 enableGitInfo: false
 disablePathToLower: true
 outputs:
-  home: ['HTML', 'JSON']
+  home: [html, rss]
 markup:
   goldmark:
     parser:
@@ -13,3 +13,5 @@ markup:
       unsafe: true
   tableOfContents:
     endLevel: 3
+  highlight:
+    noClasses: false

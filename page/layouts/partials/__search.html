@@ -10,5 +10,3 @@
   var baseurl = "{{.Site.BaseURL}}{{.Site.LanguagePrefix}}";
 </script>
 <script type="text/javascript" src="{{"js/search.js" | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}"></script>
-
-{{ partial "dark-mode-toggle.html" . }}
