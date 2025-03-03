@@ -30,8 +30,16 @@
 
     --TOP-BAR-BG-color: #fff;
 
+    --FONT-headline: "Fira Code", -apple-system, system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; /* Custom font for headlines */
+
     --MAIN-font: "Fira Sans", -apple-system, system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    --INTERNAL-MAIN-font: "Fira Code", -apple-system, system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
+    --MAIN-TITLES-H1-font: var(--FONT-headline);
+    --MAIN-TITLES-H2-font: var(--FONT-headline);
+    --MAIN-TITLES-H3-font: var(--FONT-headline);
+    --MAIN-TITLES-H4-font: var(--FONT-headline);
+    --MAIN-TITLES-H5-font: var(--FONT-headline);
+    --MAIN-TITLES-H6-font: var(--FONT-headline);
 
     --PRIMARY-color: #a13609;
 
@@ -71,7 +79,9 @@
     --EXPAND-BG-color: rgba(253, 253, 253, 0.8); /* Shortcode Expand */
     --EXPAND-BORDER-color: rgba(218, 218, 218, 1);
 
-    --VERSION-TAG-BG-color: #6AB0DE; /* Contao version tag */
+    --VERSION-TAG-BG-color: #6AB0DE; /* version tag */
+
+    --ACCENT-color: #a13609 /* Styles the markdown accent background */
 }
 
 #header a#logo {
@@ -109,12 +119,34 @@
 
 #R-sidebar {
     font-weight: 400;
+
+
 }
 
 h1 {
-    text-align: left;
+    margin-top: 1.5em;
     font-size: 36px;
-    text-transform: initial;
+    line-height: 1.08333;
+    text-align: left;
+    text-transform: none;
+}
+
+h2 {
+    font-size: 25px;
+    line-height: 1.32;
+}
+
+h3, .h3 {
+    font-size: 20px;
+    line-height: 1.15;
+}
+
+h4, .h4 {
+    margin-bottom: 1em;
+}
+
+h5 {
+    font-size: 1.125rem;
 }
 
 b, strong, label, th {
@@ -651,4 +683,13 @@ h5 code,
 h6 code,
 nav.TableOfContents li a code {
     font-size: 92%;
+}
+
+/* Style the mark element */
+mark {
+    border-radius: 0;
+    background-color: var(--INTERNAL-ACCENT-color);
+    color: #fff;
+    padding: 0;
+    margin: 0;
 }
