@@ -1,5 +1,6 @@
 ---
 title: "Post-Labelcenter"
+type: home
 ---
 
 # Post-Labelcenter 

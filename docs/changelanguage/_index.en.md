@@ -1,5 +1,6 @@
 ---
 title: "ChangeLanguage"
+type: home
 ---
 
 # ChangeLanguage v3

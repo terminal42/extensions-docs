@@ -1,5 +1,6 @@
 ---
 title: "Postfinance Checkout für Isotope eCommerce"
+type: home
 ---
 
 # PostFinance Checkout
