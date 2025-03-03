@@ -6,6 +6,7 @@ disableSearch: false
 disableLanguageSwitch: false
 documentation_label: Extension
 disableInlineCopyToClipBoard: true
+disableExplicitIndexURLs: true
 #disableAssetsBusting: true
 disableLandingPageButton: true
 DocumentationTitleEn: Make sure to configure the parameter "DocumentationTitleEn" in this extension book.
