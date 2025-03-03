@@ -129,6 +129,7 @@ h1 {
     line-height: 1.08333;
     text-align: left;
     text-transform: none;
+    overflow-y: hidden;
 }
 
 h2 {
