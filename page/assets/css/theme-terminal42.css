@@ -41,6 +41,13 @@
     --MAIN-TITLES-H5-font: var(--FONT-headline);
     --MAIN-TITLES-H6-font: var(--FONT-headline);
 
+    --MAIN-TITLES-H1-font-weight: 400;
+    --MAIN-TITLES-H2-font-weight: 400;
+    --MAIN-TITLES-H3-font-weight: 400;
+    --MAIN-TITLES-H4-font-weight: 400;
+    --MAIN-TITLES-H5-font-weight: 400;
+    --MAIN-TITLES-H6-font-weight: 400;
+
     --PRIMARY-color: #a13609;
 
     --BODY-NAV-BG-color-hover: #f6f6f6; /* Background color of the page navigation on hover */
@@ -150,6 +157,10 @@ h5 {
     font-size: 1.125rem;
 }
 
+h1, h2, h3, h4, h5 {
+
+}
+
 b, strong, label, th {
     font-weight: 600;
 }
@@ -167,10 +178,17 @@ b, strong, label, th {
 }
 
 #R-shortcutmenu-home > ul.collapsible-menu {
-    background-color: var(--MENU-BG-color);
+    background-color: var(--MENU-SECTIONS-ACTIVE-BG-color);
     margin: 0;
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+
+#R-sidebar .nav-title {
+    color: var(--INTERNAL-MAIN-TITLES-H3-TEXT-color);
+    font-size: 20px;
+    font-family: "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight: 400;
 }
 
 #R-sidebar ul.collapsible-menu li.active > a {
