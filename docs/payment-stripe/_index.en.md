@@ -1,5 +1,6 @@
 ---
 title: "Stripe payments for Isotope eCommerce"
+type: home
 ---
 
 # Stripe payments for Isotope eCommerce

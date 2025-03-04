@@ -1,12 +1,24 @@
-themeVariant: 'terminal42'
+themeVariant:
+  - auto:
+      - terminal42-light
+      - terminal42-dark
+    identifier: auto-theme
+    name: Auto
+  - identifier: terminal42-light
+    name: Light
+  - identifier: terminal42-dark
+    name: Dark
 disableSearch: false
 disableLanguageSwitch: false
 documentation_label: Extension
-showVisitedLinks: true
 disableInlineCopyToClipBoard: true
+disableExplicitIndexURLs: true
 #disableAssetsBusting: true
 disableLandingPageButton: true
 DocumentationTitleEn: Make sure to configure the parameter "DocumentationTitleEn" in this extension book.
 DocumentationTitleDe: Stelle sicher, dass der Parameter "DocumentationTitleEn" in diesem Erweiterungsbuch konfiguriert ist.
 extensionPermalink: ''
 extensionIcon: terminal42.svg
+hideAuthorName: true
+hideAuthorEmail: true
+hideAuthorDate: true

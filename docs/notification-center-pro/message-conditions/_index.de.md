@@ -29,5 +29,5 @@ Varianten werden funktionieren. Bedingungen innerhalb des E-Mail-Textes z.B. wer
 {{% /notice %}}
 
 {{% notice tip %}}
-Diese Funktion ist besonders mächtig im Zusammenspiel mit [benutzerdefinierten Tokens]({{< ref "/custom-tokens" >}})!
+Diese Funktion ist besonders mächtig im Zusammenspiel mit [benutzerdefinierten Tokens]({{% ref "/custom-tokens" %}})!
 {{% /notice %}}

@@ -1,5 +1,6 @@
 ---
 title: "Notification Center"
+type: home
 ---
 
 # Notification Center

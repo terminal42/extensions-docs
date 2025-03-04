@@ -17,7 +17,7 @@ git clone --recurse-submodules git@github.com:terminal42/extensions-docs.git
 To update the theme after cloning, simply run the following command:
 
 ```bash
-git submodule foreach git pull origin master
+git submodule foreach git pull origin main
 ```
 
 

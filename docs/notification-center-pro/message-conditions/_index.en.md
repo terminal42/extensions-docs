@@ -29,5 +29,5 @@ variants will work. Conditions within the e-mail text, for example, are also wri
 {{% /notice %}}
 
 {{% notice tip %}}
-This function is particularly powerful in combination with [custom tokens]({{< ref "/custom-tokens" >}})!
+This function is particularly powerful in combination with [custom tokens]({{% ref "/custom-tokens" %}})!
 {{% /notice %}}
