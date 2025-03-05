@@ -1,5 +1,6 @@
 ---
 title: "Testing custom tokens"
+weight: 10
 ---
 
 Testing your custom tokens can be achieved in many ways. The most obvious way is to send your notification over and 

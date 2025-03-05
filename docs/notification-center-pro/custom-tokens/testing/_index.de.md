@@ -1,6 +1,7 @@
 ---
 title: "Eigene Tokens testen"
 url: "eigene-tokens/testen"
+weight: 10
 ---
 
 Das Testen deiner eigenen Tokens kann auf viele Arten erfolgen. Die naheliegendste Möglichkeit ist, deine Benachrichtigung
