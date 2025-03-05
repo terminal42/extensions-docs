@@ -74,27 +74,16 @@ Hier ist der Twig-Code, der im Screenshot zu sehen ist und zum besseren Verstän
 
 ```twig
 {#
-    Wir wollen sicherstellen, dass es keinen Leerraum gibt, sondern nur unser
-    Token-Wert ausgegeben wird. Du kannst die Behandlung von Leerzeichen in Twig
-    steuern, um genau das zu erreichen, was du möchtest. Siehe
-    https://twig.symfony.com/doc/3.x/templates.html#templates-whitespace-control
-    für weitere Informationen.
-#}
-{% apply spaceless %}
-
-{#
     Zunächst einmal ist es immer wichtig, das gesamte Template in eine if-Anweisung
     zu verpacken, um zu prüfen, ob überhaupt ein ##form_colors##-Token angegeben wurde.
     Der einfachste Weg ist die Verwendung der Methode "has()" auf unseren rawTokens.
 #}
 {% if rawTokens.has('form_colors') %}
-
 {#
     Hier ist ein Beispiel, wie du eine Zeichenkette mit ", " trennen kannst, wenn
     sie das Format "green, red, blue" hat.
 #}
 {% set colors = parsedTokens.form_colors|split(', ') %}
-
 {#
    Wir haben nun in dieser Vorlage eine Variable mit dem Namen "colors" definiert,
    die nun ein Array enthält. Wir können also unseren gewünschten Token-Inhalt erreichen,
@@ -104,9 +93,7 @@ Hier ist der Twig-Code, der im Screenshot zu sehen ist und zum besseren Verstän
    lediglich zur Veranschaulichung, wie komplexere Templates geschrieben werden könnten.
 #}
 {% if 'green' in colors %}yes{% else %}no{% endif %}
-
 {% endif %}
-{% endapply %}
 ```
 
 Das war's, du hast jetzt ein Token `is_color_green`, das entweder `yes` oder `no` enthält. Herzlichen Glückwunsch! 🎉

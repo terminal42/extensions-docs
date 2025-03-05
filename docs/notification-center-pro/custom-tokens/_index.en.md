@@ -80,27 +80,17 @@ Here is the Twig code visible in the screenshot and annotated with comments for 
 
 ```twig
 {#
-    We want to make sure, there is no white space but just our token value.
-    You can control the whitespace handling in Twig to achieve exactly what you want.
-    See https://twig.symfony.com/doc/3.x/templates.html#templates-whitespace-control
-    for more information.
-#}
-{% apply spaceless %}
-
-{#
     First of all, it's always important to wrap the whole template into an
     if statement in order to check whether
     there even was a ##form_colors## token provided.
     The easiest way is to use the "has()" method on our rawTokens.
 #}
 {% if rawTokens.has('form_colors') %}
-
 {#
     Here is an example how you could split a string
     by ", " if it was in the format of "green, red, blue".
 #}
 {% set colors = parsedTokens.form_colors|split(', ') %}
-
 {#
     We now defined a variable in this template named "colors" which
     now contains an array. So we can achieve our desired token content
@@ -110,9 +100,7 @@ Here is the Twig code visible in the screenshot and annotated with comments for 
     used here to illustrate how more complex templates could be written.
 #}
 {% if 'green' in colors %}yes{% else %}no{% endif %}
-
 {% endif %}
-{% endapply %}
 ```
 
 That's it, you now have a token `is_color_green` which contains either `yes` or `no`. Congratulations! 🎉
