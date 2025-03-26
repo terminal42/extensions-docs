@@ -79,7 +79,7 @@ Dinge berechnen oder ähnliches. Hier ein ausführliches Beispiel mit Kommentare
 zusammen, die du brauchst!
 
 ```twig
-{# Definieren wir zunächst zwei Arrays für die Kopfzeile und die Werte-Zeile#}
+{# Definieren wir zunächst zwei Arrays für die Kopfzeile und die Werte-Zeile #}
 {% set header = [] %}
 {% set row = [] %}
 

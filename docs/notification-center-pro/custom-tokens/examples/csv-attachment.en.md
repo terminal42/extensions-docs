@@ -34,12 +34,12 @@ firstname,lastname,city
 Doing that manually is hard, this is why the Notification Center Pro provides its own `csv` Twig filter:
 
 ```twig
-{% set headers = [
+{% set header = [
     'firstname', 
     'lastname',
     'city',
 ] %}
-{{ headers|csv }}
+{{ header|csv }}
 {% set row = [
     parsedTokens.form_firstname|default(''), 
     parsedTokens.form_lastname|default(''), 
