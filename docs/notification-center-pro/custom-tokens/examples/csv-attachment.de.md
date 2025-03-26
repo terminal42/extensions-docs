@@ -35,12 +35,12 @@ firstname,lastname,city
 Das manuell zu tun ist schwierig, deswegen verfügt das Notification Center Pro über einen `csv` Twig-Filter:
 
 ```twig
-{% set headers = [
+{% set header = [
     'firstname', 
     'lastname',
     'city',
 ] %}
-{{ headers|csv }}
+{{ header|csv }}
 {% set row = [
     parsedTokens.form_firstname|default(''), 
     parsedTokens.form_lastname|default(''), 
@@ -61,9 +61,66 @@ Namen zu geben, es als Datei-Token zu aktivieren und ihm den gewünschten Datein
 
 Dieses Token kann nun benutzt werden, um bspw. das CSV einer Mail anzuhängen. Tada! 🎉
 
+### Alle Tokens ausgeben
+
+Wenn du einfach gerne alle Tokens ausgegeben hättest, ist das denkbar einfach:
+
+```twig
+{{ parsedTokens|keys|csv }} {# Nimmt nur die Keys als Header #}
+{{ parsedTokens|csv }} {# Nimmt nur die Werte als Reihe #}
+```
+
+### Komplexere Aufgaben
+
+Natürlich kannst du auch deutlich komplexere Aufgaben erfüllen. Wenn du bspw. nur die Formulardaten mit dem 
+passenden Formular-Token haben willst, dann bist du erstmal nur an allen `form_*` Tokens interessiert und willst 
+diese mit dem passenden `formlabel_*` ausstatten. Oder vielleicht willst du auch noch die Formulardaten anpassen und 
+Dinge berechnen oder ähnliches. Hier ein ausführliches Beispiel mit Kommentaren - kopiere dir einfach die Sachen 
+zusammen, die du brauchst!
+
+```twig
+{# Definieren wir zunächst zwei Arrays für die Kopfzeile und die Werte-Zeile#}
+{% set header = [] %}
+{% set row = [] %}
+
+{% for token in rawTokens %}
+    {# So kannst du die Token filtern, die "form_" in ihrem Namen haben #}
+     {% if 'form_' in token.name %}
+     
+        {% set headerValue = token.name %} {# So nimmst du den Token-Namen als Header #}
+        {% set headerValue = token.name|replace({'form_': ''}) %} {# oder möchtest du das "form_" aus dem Namen entfernen? #}
+    
+        {# oder möchtest du das "form_" aus dem Token entfernen und den passenden Token-Wert aus "formlabel_*" nehmen? #}
+        {% set labelTokenName = token.name|replace({'form_': 'formlabel_'}) %}
+        {% if rawTokens.has(labelTokenName) %}
+            {% set headerValue = rawTokens.byName(labelTokenName).parserValue %} 
+        {% else %}
+            {% set headerValue = token.parserValue %} {# wir behalten den ursprünglichen Token-Namen, wenn kein passendes „formlabel_*“-Token gefunden wurde (sollte nicht passieren) #}
+        {% endif %}
+        
+        {% set header = header|merge([headerValue]) %} {# unseren transformierten Header-Wert als Header verwenden #}
+
+
+        {# unsere spezielle Transformation nur auf das Token "form_firstname" anwenden #}
+        {% if token.name is same as 'form_firstname' %}
+            {% set rowValue = token.value|upper %} {# nach Belieben transformieren, indem du Twig-Filter und -Funktionen auf den Rohwert anwendest (kann ein Array sein) #}
+        {% else %}
+            {% set rowValue = token.parserValue %} {# den ursprünglichen Parserwert beibehalten (ist immer ein String) #}
+        {% endif %}
+        {% set row = row|merge([rowValue]) %} {# unseren transformierten Wert als Zeilenwert verwenden #}
+        
+        
+     {% endif %}
+
+{% endfor %}
+{# Jetzt müssen wir nur noch die Arrays ausgeben und sie als CSV formatieren #}
+{{ header|csv }}
+{{ row|csv }}
+```
+
 {{% notice tip %}}
-Der `csv`-Filter ist nicht Teil von Twig, sondern wird stattdessen vom Notification Center Pro bereitgestellt. Du 
-kannst auch mit einem anderen Trennzeichen arbeiten. Wenn du die Werte beispielsweise mit `;` trennen möchtest, 
-verwende `{{ row|csv(';') }}`. Der zweite und dritte Parameter können genutzt werden, um das "Enclosure" und 
+Der `csv`-Filter ist nicht Teil von Twig, sondern wird stattdessen vom Notification Center Pro bereitgestellt. Du
+kannst auch mit einem anderen Trennzeichen arbeiten. Wenn du die Werte beispielsweise mit `;` trennen möchtest,
+verwende `{{ row|csv(';') }}`. Der zweite und dritte Parameter können genutzt werden, um das "Enclosure" und
 Escape-Zeichen entsprechend anzupassen, falls erforderlich.
 {{% /notice %}}
