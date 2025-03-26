@@ -94,7 +94,8 @@ that you need!
         {% if rawTokens.has(labelTokenName) %}
             {% set headerValue = rawTokens.byName(labelTokenName).parserValue %} 
         {% else %}
-            {% set headerValue = token.parserValue %} {# keep original token name if no matching "formlabel_*" token was found (should not happen) #}
+            {% set headerValue = token.name %} {# keep original token name if no matching "formlabel_*" token was found 
+            (should not happen) #}
         {% endif %}
         
         {% set header = header|merge([headerValue]) %} {# use our transformed header value as header #}

@@ -84,7 +84,7 @@ zusammen, die du brauchst!
 {% set row = [] %}
 
 {% for token in rawTokens %}
-    {# So kannst du die Token filtern, die "form_" in ihrem Namen haben #}
+    {# So kannst du die Tokens filtern, die "form_" in ihrem Namen haben #}
      {% if 'form_' in token.name %}
      
         {% set headerValue = token.name %} {# So nimmst du den Token-Namen als Header #}
@@ -95,7 +95,8 @@ zusammen, die du brauchst!
         {% if rawTokens.has(labelTokenName) %}
             {% set headerValue = rawTokens.byName(labelTokenName).parserValue %} 
         {% else %}
-            {% set headerValue = token.parserValue %} {# wir behalten den ursprünglichen Token-Namen, wenn kein passendes „formlabel_*“-Token gefunden wurde (sollte nicht passieren) #}
+            {% set headerValue = token.name %} {# wir behalten den ursprünglichen Token-Namen, wenn kein passendes 
+            „formlabel_*“-Token gefunden wurde (sollte nicht passieren) #}
         {% endif %}
         
         {% set header = header|merge([headerValue]) %} {# unseren transformierten Header-Wert als Header verwenden #}
