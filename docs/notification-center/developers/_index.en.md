@@ -225,11 +225,18 @@ Sometimes, you need to add tokens to an already existing notification type or yo
 That's when we have to dig a little deeper into the processes of the Notification Center.
 There are four events you can use:
 
+* AsynchronousReceiptEvent
 * CreateParcelEvent
 * GetNotificationTypeForModuleConfigEvent
 * GetTokenDefinitionsForNotificationTypeEvent
 * GetTokenDefinitionClassesForContextEvent
 * ReceiptEvent
+
+### AsynchronousReceiptEvent
+
+This event is dispatched when a Gateway triggers `$notificationCenter->informAboutAsynchronousReceipt()` with the 
+matching `AsynchronousReceipt`. You can use it to get informed about asynchronous parcel delivery updates, see 
+[Asynchronous Gateways]({{% relref "gateways#asynchronous-gateways" %}}) for more information.
 
 ### CreateParcelEvent
 

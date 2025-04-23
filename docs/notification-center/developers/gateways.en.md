@@ -103,3 +103,52 @@ In order to make your new gateway known to the Notification Center, you have to 
 service and tag it using the `notification_center.gateway` tag. If you use the [autoconfiguration
 feature of the Symfony Container][DI_Autoconfigure], you don't need to tag the service. Implementing the
 `GatewayInterface` will be enough.
+
+## Asynchronous Gateways
+
+When a parcel is given to a Gateway, there's an immediate response on the counter which is called the `Receipt`, we have
+already learned about that. And this delivery can be either successful or unsuccessful. Either you managed to hand over
+your parcel on the counter, or you didn't because e.g. the nice employee told you, you forgot to add a certain `Stamp`.
+
+Now, what happens to that parcel after you have successfully delivered it to the counter? Exactly, so far, we have no clue.
+The immediate `Receipt` only tells us whether our parcel has been accepted by the Gateway or not. But we are also interested
+in whether the parcel was actually delivered to the final destination which can be minutes, days or weeks later.
+
+Enter the `AsynchronousReceipt`.
+
+The `MailerGateway` of the Notification Center uses this feature too because by default, Contao uses the Symfony Mailer
+and sending the e-mails happens asynchronously using Symfony Messenger. This means that Contao is going to try to send
+the e-mail in the background for a few times in order to work around temporary network outages etc.
+
+Hence, when sealing the package, the `MailerGateway` adds another stamp in order to inform any third-party event listeners
+about the fact, that this parcel will get asynchronous information:
+
+```php
+return $parcel
+    ->seal()
+    ->withStamp(AsynchronousDeliveryStamp::createWithRandomId())
+;
+```
+
+Now, any listener can access this stamp using `$event->receipt->getParcel()->getStamp(AsynchronousDeliveryStamp::class)?->identifier`
+in any of the events and store this identifier for further processing.
+
+The `MailerGatway` itself passes this identifier as a header on the `Email` instance and - because it uses the Symfony Mailer -
+registers to the Symfony Mailer `SentMessageEvent` and the `FailedMessageEvent`. This allows it to extract the header, remove
+it from the final `Email` and inform any third-party integrators about the fact, that this e-mail now has been sent.
+Doing this is pretty straightforward:
+
+```php
+$receipt = $error
+    ? AsynchronousReceipt::createForUnsuccessfulDelivery($messageId, $error)
+    : AsynchronousReceipt::createForSuccessfulDelivery($messageId);
+
+$this->notificationCenter->informAboutAsynchronousReceipt($receipt);
+```
+
+The `NotificationCenter::informAboutAsynchronousReceipt()` does nothing more than dispatching an `AsynchronousReceiptEvent`
+so listening to it is enough to get informed about any `AsynchronousReceipt`.
+
+As you can see, you can enhance your Gateway with asynchronous capabilities in order to inform third-party developers about
+the fact that your `Parcel` is actually sent asynchronously, you gave it an identifier, and you will inform them as soon
+as you know the asynchronous process has finished.
