@@ -175,7 +175,7 @@ Let's look at how the Core uses this to pass on file uploads from the form gener
 <?php
 
 foreach ($files as $k => $file) {
-    $voucher = $this->notificationCenter->getBulkyGoodsStorage()->store(
+    $voucher = $this->notificationCenter->getBulkyItemStorage()->store(
         FileItem::fromPath($file['tmp_name'], $file['name'], $file['type'], $file['size'])
     );
 
@@ -200,7 +200,7 @@ look for example like this:
 ```php
 <?php
 
-$item = $this->getNotificationCenter()->getBulkyGoodsStorage()->retrieve($voucher);
+$item = $this->getNotificationCenter()->getBulkyItemStorage()->retrieve($voucher);
 
 if ($item instanceof FileItem) {
     $email->attach(
