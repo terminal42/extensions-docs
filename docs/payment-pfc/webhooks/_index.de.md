@@ -14,7 +14,7 @@ Beachte das Webhooks nicht auf lokalen Testsystemen funktionieren, oder wenn du
 deinen Shop mittels Passwort geschützt hast.
 {{% /notice %}}
 
-Webhooks bestehen bei Postfinance Checkout aus einer **URL** uns einem oder mehreren **Listeners**.
+Webhooks bestehen bei Postfinance Checkout aus einer **URL** und einem oder mehreren **Listeners**.
 Um diese einzurichten, navigiere im Portal in deinen Space und danach Links unten auf _Einstellungen_ und dann
 in den Tabs auf _Generell_. Hier findest du die beiden nötigen Punkte.
 
@@ -36,7 +36,7 @@ Die korrekte URL wird in deinem Shop-Backend angezeigt, wenn du die Zahlungsmeth
 
 ## Webhook-Listeners
 
-Mit der _Webhook-URL_ weis Postfinance Checkout, unter welcher URL dein Shop informiert werden kann.
+Mit der _Webhook-URL_ weiss Postfinance Checkout, unter welcher URL dein Shop informiert werden kann.
 Nun müssen wir noch mitteilen, welche Informationen uns interessieren. Lege dazu einen **Webhook-Listener** an.
 
 Wähle im ersten Schritt **Transaktion** als Entität. Im nächsten Schritt musst du dann die entsprechenden Felder 
