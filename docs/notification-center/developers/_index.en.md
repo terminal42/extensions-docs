@@ -194,6 +194,13 @@ We then add a stamp to the parcel to inform the gateways about the fact that thi
 $stamps = $stamps->with(new BulkyItemsStamp($bulkyItemVouchers));
 ```
 
+Depending on the gateway you use, you may need to add the voucher to a token (this is the case for the mailer gateway):
+
+```php
+// The mailer gateway needs the vouchers comma-separated
+$tokens['attachments'] = implode(', ', $bulkyItemVouchers);
+```
+
 Done. A gateway can now use those vouchers to actually ask for the bulky items when sending them. This could
 look for example like this:
 
