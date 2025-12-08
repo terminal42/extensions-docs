@@ -22,7 +22,7 @@ Now we can use `##form_urgent## === 'yes'` to send an entire message only if the
 
 ![Screenshot of the condition in the back end]({{% asset "/notification-center-pro/images/screenshot_message_condition.png" %}}?classes=shadow)
 
-{{% notice idea %}}
+{{% notice note %}}
 Technically speaking, you don't need the `##` when defining conditions. They are removed before being evaluated. Using them
 is only for your own usability as they trigger autocompletion. But you might as well write `form_urgent === 'yes'` directly. Both
 variants will work. Conditions within the e-mail text, for example, are also written without the `##` (e.g. `{if form_urgent === 'yes'}`).
