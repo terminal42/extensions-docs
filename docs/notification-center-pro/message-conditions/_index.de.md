@@ -29,5 +29,9 @@ Varianten werden funktionieren. Bedingungen innerhalb des E-Mail-Textes z.B. wer
 {{% /notice %}}
 
 {{% notice tip %}}
-Diese Funktion ist besonders mächtig im Zusammenspiel mit [benutzerdefinierten Tokens]({{% ref "/custom-tokens" %}})!
+Du kannst die gleiche Syntax verwenden, welche Contao mit "Simple Tokens" unterstützt, die intern die [Symfony 
+Expression Language Syntax](https://symfony.com/doc/current/reference/formats/expression_language.html) nutzt.
+Das bedeutet, dass komplexere Kombinationen wie `(form_postal_code in 90000..919999 or form_postal_code == 9277) and form_selection == 1`
+kein Problem sind! Wenn deine Bedingung jedoch komplexer wird oder du sie möglicherweise in mehreren 
+Benachrichtigungen wiederverwenden möchtest, wird diese Funktion in Kombination mit [benutzerdefinierten Tokens]({{% ref "/custom-tokens" %}}) besonders mächtig!
 {{% /notice %}}

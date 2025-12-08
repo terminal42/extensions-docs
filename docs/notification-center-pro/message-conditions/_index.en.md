@@ -29,5 +29,8 @@ variants will work. Conditions within the e-mail text, for example, are also wri
 {{% /notice %}}
 
 {{% notice tip %}}
-This function is particularly powerful in combination with [custom tokens]({{% ref "/custom-tokens" %}})!
+You can use whatever syntax Contao "Simple Tokens" support, which internally use the [Symfony Expression Language Syntax](https://symfony.com/doc/current/reference/formats/expression_language.html).
+That means, more complex combinations such as `(form_postal_code in 90000..919999 or form_postal_code == 9277) and form_selection == 1` are
+no problem at all! However, if your condition becomes more complex or you want to re-use it maybe in multiple notifications,
+this feature becomes particularly powerful in combination with [custom tokens]({{% ref "/custom-tokens" %}})!
 {{% /notice %}}
