@@ -35,4 +35,3 @@ Das bedeutet, dass komplexere Kombinationen wie `(form_postal_code in 90000..919
 kein Problem sind! Wenn deine Bedingung jedoch komplexer wird oder du sie möglicherweise in mehreren 
 Benachrichtigungen wiederverwenden möchtest, wird diese Funktion in Kombination mit [benutzerdefinierten Tokens]({{% ref "/custom-tokens" %}}) besonders mächtig!
 {{% /notice %}}
-
