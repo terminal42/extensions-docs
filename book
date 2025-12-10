@@ -21,7 +21,8 @@ if (!in_array($command, $commands, true)) {
 
 $runCommand = function (string $command) {
     echo $command . "\n";
-    echo system($command);
+    echo system($command, $resultCode);
+    exit($resultCode);
 };
 
 $buildBook = function(string $book) use ($runCommand) {
