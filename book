@@ -19,13 +19,15 @@ if (!in_array($command, $commands, true)) {
     exit(1);
 }
 
-$runCommand = function (string $command) {
+
+
+$runCommand = function (string $command): int {
     echo $command . "\n";
     echo system($command, $resultCode);
-    exit($resultCode);
+    return $resultCode;
 };
 
-$buildBook = function(string $book) use ($runCommand) {
+$buildBook = function(string $book) use ($runCommand): int {
     $command = <<<COMMAND
 cd page; hugo \
     --cleanDestinationDir \
@@ -35,11 +37,11 @@ cd page; hugo \
     --baseURL https://extensions.terminal42.ch/docs/{book}/
 COMMAND;
 
-    $runCommand(str_replace('{book}', $book, $command));
+    return $runCommand(str_replace('{book}', $book, $command));
 };
 
 
-$liveBook = function(string $book) use ($runCommand) {
+$liveBook = function(string $book) use ($runCommand): int {
     $command = <<<COMMAND
 cd page; hugo server \
     --cleanDestinationDir \
@@ -48,24 +50,25 @@ cd page; hugo server \
     --logLevel info
 COMMAND;
 
-    $runCommand(str_replace('{book}', $book, $command));
+    return $runCommand(str_replace('{book}', $book, $command));
 };
 
 preg_match('/^(build|live)-(.*)/', $command, $matches);
 
 if ('build-all' === $matches[0]) {
     foreach ($books as $book) {
-        $buildBook($book);
+        $result = $buildBook($book);
+        if (0 !== $result) {
+            exit($result);
+        }
     }
-    return;
+    exit(0);
 }
 
 if ('build' === $matches[1]) {
-    $buildBook($matches[2]);
-    return;
+    exit($buildBook($matches[2]));
 }
 
 if ('live' === $matches[1]) {
-    $liveBook($matches[2]);
-    return;
+    exit($liveBook($matches[2]));
 }
