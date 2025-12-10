@@ -19,8 +19,6 @@ if (!in_array($command, $commands, true)) {
     exit(1);
 }
 
-
-
 $runCommand = function (string $command): int {
     echo $command . "\n";
     echo system($command, $resultCode);
