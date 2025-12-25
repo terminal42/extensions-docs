@@ -26,7 +26,7 @@ class SomeService
     
     public function sendMessage(): void
     {
-        $notificationId = 42: // Usually, some module setting of yours where the user can select the desired notification
+        $notificationId = 42; // Usually, some module setting of yours where the user can select the desired notification
         $tokens = [
             'firstname' => 'value1',
             'lastname' => 'value2',   
