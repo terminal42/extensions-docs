@@ -3,8 +3,6 @@ title: "Postfinance Checkout für Isotope eCommerce"
 type: home
 ---
 
-# PostFinance Checkout
-
 [PostFinance Checkout][website] ist eine Online-Zahlungslösung der Schweizerischen PostFinance.
 
 > Mit PostFinance Checkout erhalten Sie eine flexible und funktionsstarke Payment Service Providing Lösung für Ihren

@@ -3,8 +3,6 @@ title: "Stripe Zahlungen für Isotope eCommerce"
 type: home
 ---
 
-# Stripe Zahlungen für Isotope eCommerce
-
 Mit dieser Erweiterung kannst du den Zahlungsanbieter [Stripe](https://www.stripe.com)
 in deinem Isotope eCommerce Shop verwenden.
 

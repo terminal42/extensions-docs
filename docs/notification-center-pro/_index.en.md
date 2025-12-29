@@ -3,8 +3,6 @@ title: "Notification Center Pro"
 type: home
 ---
 
-# Notification Center Pro
-
 Notification Center Pro is a commercial extension to our [free and very popular Notification Center][NC]. 
 
 On top of using the free version, Notification Center Pro will enhance your Notification Center experience with the 

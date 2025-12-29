@@ -166,7 +166,7 @@ b, strong, label, th {
 }
 
 #R-header-wrapper {
-    border-bottom: 4px solid var(--MENU-HEADER-BORDER-color);
+    border-bottom: 4px solid var(--MENU-HEADER-BORDER-color) !important;
 }
 
 #R-homelinks {
@@ -212,8 +212,9 @@ b, strong, label, th {
 }
 
 /* Logo */
-#R-header #logo {
+#R-header-wrapper #logo {
     display: block;
+    margin: 1rem 0;
 }
 
 #logo svg {
@@ -227,6 +228,9 @@ b, strong, label, th {
     display: block;
     margin-top: 4px;
     text-align: center;
+}
+
+#R-sidebar > #R-header-wrapper :is(a, span) {
     color: white;
 }
 

@@ -3,8 +3,6 @@ title: "Stripe payments for Isotope eCommerce"
 type: home
 ---
 
-# Stripe payments for Isotope eCommerce
-
 With this extension you can use the payment provider [Stripe](https://www.stripe.com)
 in your Isotope eCommerce Shop.
 

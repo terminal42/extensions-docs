@@ -1,9 +1,7 @@
 ---
-title: "ChangeLanguage"
+title: "ChangeLanguage v3"
 type: home
 ---
-
-# ChangeLanguage v3
 
 *ChangeLanguage* is an extension for the [Contao CMS][1] (version 3.5 and 4.x)
 which allows visitors to switch between different languages of your website.
