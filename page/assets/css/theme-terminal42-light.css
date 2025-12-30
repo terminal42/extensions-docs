@@ -4,4 +4,5 @@
 :root {
     --MAIN-TITLES-H1-TEXT-color: #a13609;
     --MENU-SEARCH-color: var(--MAIN-TEXT-color);
+    --MENU-HEADER-color: #fff;
 }
