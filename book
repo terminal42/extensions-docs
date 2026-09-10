@@ -1,72 +1,13 @@
 #!/usr/bin/env php
 <?php
 
-$books = $folders = array_map(function($dir) {
-    return basename($dir);
-}, glob(__DIR__ . '/docs/*', GLOB_ONLYDIR));
+declare(strict_types=1);
 
-$commands = ['build-all'];
+use Symfony\Component\Dotenv\Dotenv;
+use Terminal42\ExtensionsDocs\BookApplication;
 
-foreach ($books as $book) {
-    $commands[] = 'build-' . $book;
-    $commands[] = 'live-' . $book;
-}
+require __DIR__ . '/vendor/autoload.php';
 
-$command = $_SERVER['argv'][1] ?? '';
+(new Dotenv())->usePutenv()->loadEnv(__DIR__ . '/.env');
 
-if (!in_array($command, $commands, true)) {
-    echo 'Must run one of the following commands:' . "\n- " . implode("\n- ", $commands);
-    exit(1);
-}
-
-$runCommand = function (string $command): int {
-    echo $command . "\n";
-    echo system($command, $resultCode);
-    return $resultCode;
-};
-
-$buildBook = function(string $book) use ($runCommand): int {
-    $command = <<<COMMAND
-cd page; hugo \
-    --cleanDestinationDir \
-    --environment {book} \
-    --destination ../build/{book} \
-    --logLevel info \
-    --baseURL https://extensions.terminal42.ch/docs/{book}/
-COMMAND;
-
-    return $runCommand(str_replace('{book}', $book, $command));
-};
-
-
-$liveBook = function(string $book) use ($runCommand): int {
-    $command = <<<COMMAND
-cd page; hugo server \
-    --cleanDestinationDir \
-    --environment {book} \
-    --destination ../build/{book} \
-    --logLevel info
-COMMAND;
-
-    return $runCommand(str_replace('{book}', $book, $command));
-};
-
-preg_match('/^(build|live)-(.*)/', $command, $matches);
-
-if ('build-all' === $matches[0]) {
-    foreach ($books as $book) {
-        $result = $buildBook($book);
-        if (0 !== $result) {
-            exit($result);
-        }
-    }
-    exit(0);
-}
-
-if ('build' === $matches[1]) {
-    exit($buildBook($matches[2]));
-}
-
-if ('live' === $matches[1]) {
-    exit($liveBook($matches[2]));
-}
+exit((new BookApplication(__DIR__))->run());

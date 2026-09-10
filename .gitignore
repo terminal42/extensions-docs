@@ -1,6 +1,8 @@
 .hugo_build.lock
+/.env.local
 /.idea/
 /build/
 /resources/
+/vendor/
 /link-checker/vendor
 /link-checker/.php_cs.cache
