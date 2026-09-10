@@ -8,7 +8,8 @@ themeVariant:
     name: Light
   - identifier: terminal42-dark
     name: Dark
-disableSearch: false
+search:
+  disable: false
 disableLanguageSwitch: false
 documentation_label: Extension
 disableInlineCopyToClipBoard: true
