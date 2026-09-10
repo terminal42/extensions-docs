@@ -86,7 +86,7 @@ final class BookApplication extends Application
             $protection = $this->protectBuild($book, $credentials, $deployment);
 
             try {
-                return $this->replaceRemoteBook($book, $deployment, $output);
+                return $this->syncRemoteBooks([$book], $deployment, $output);
             } finally {
                 $this->restoreBuild($protection);
             }
@@ -113,15 +113,7 @@ final class BookApplication extends Application
                 }
             }
 
-            foreach ($books as $availableBook) {
-                $result = $this->replaceRemoteBook($availableBook, $deployment, $output);
-
-                if (Command::SUCCESS !== $result) {
-                    return $result;
-                }
-            }
-
-            return Command::SUCCESS;
+            return $this->syncRemoteBooks($books, $deployment, $output);
         });
     }
 
@@ -334,39 +326,37 @@ HTACCESS;
     }
 
     /**
+     * @param list<string>                                                                            $books
      * @param array{host: string, user: string, port: int, target: string, identityFile: string|null} $deployment
      */
-    private function replaceRemoteBook(string $book, array $deployment, OutputInterface $output): int
+    private function syncRemoteBooks(array $books, array $deployment, OutputInterface $output): int
     {
-        $result = $this->removeRemoteBook($book, $deployment, $output);
-
-        if (Command::SUCCESS !== $result) {
-            return $result;
-        }
+        $sources = array_map(
+            fn (string $book): string => $this->projectDirectory . '/build/' . $book,
+            $books,
+        );
+        $destination = $deployment['user'] . '@' . $deployment['host'] . ':' . $deployment['target'] . '/';
 
         return $this->runProcess(array_merge([
-            'scp',
-        ], $this->sshOptions($deployment, true), [
-            '-r',
-            $this->projectDirectory . '/build/' . $book,
-            $deployment['user'] . '@' . $deployment['host'] . ':' . $deployment['target'],
-        ]), $this->projectDirectory, $output);
+            'rsync',
+            '--archive',
+            '--checksum',
+            '--compress',
+            '--delete-delay',
+            '--delay-updates',
+            '--rsh',
+            $this->rsyncSshCommand($deployment),
+        ], $sources, [$destination]), $this->projectDirectory, $output);
     }
 
     /**
      * @param array{host: string, user: string, port: int, target: string, identityFile: string|null} $deployment
      */
-    private function removeRemoteBook(string $book, array $deployment, OutputInterface $output): int
+    private function rsyncSshCommand(array $deployment): string
     {
-        return $this->runProcess(array_merge([
+        return implode(' ', array_map('escapeshellarg', array_merge([
             'ssh',
-        ], $this->sshOptions($deployment, false), [
-            $deployment['user'] . '@' . $deployment['host'],
-            'rm',
-            '-rf',
-            '--',
-            $deployment['target'] . '/' . $book,
-        ]), $this->projectDirectory, $output);
+        ], $this->sshOptions($deployment))));
     }
 
     /**
@@ -374,14 +364,14 @@ HTACCESS;
      *
      * @return list<string>
      */
-    private function sshOptions(array $deployment, bool $scp): array
+    private function sshOptions(array $deployment): array
     {
         $options = [
             '-o',
             'BatchMode=yes',
             '-o',
             'StrictHostKeyChecking=accept-new',
-            $scp ? '-P' : '-p',
+            '-p',
             (string) $deployment['port'],
         ];
 
